@@ -787,7 +787,11 @@
       <created>1401830386214</created>
       <updated>1401830386214</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary=" Primer commit local">
+      <created>1401830929544</created>
+      <updated>1401830929544</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
