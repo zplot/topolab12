@@ -1,0 +1,6 @@
+2014-04-29 08:23:46,600 INFO 6594 4525715456 topo1():44 Salgo de topo1
+2014-04-29 08:31:14,250 INFO 6716 4521742336 topo1():29 Entro en topo1
+2014-04-29 08:31:14,251 INFO 6716 4521742336 topo1():44 Salgo de topo1
+2014-04-29 08:31:27,472 INFO 6716 4525948928 topo1():29 Entro en topo1
+2014-04-29 08:31:27,476 INFO 6716 4525948928 form_processing_es_una_base():50 Entro en form_processing_es_una_base
+2014-04-29 08:31:27,476 INFO 6716 4525948928 topo1():44 Salgo de topo1

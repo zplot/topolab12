@@ -1,0 +1,39 @@
+1. La función todas devuelve todas las topologías de un número dado de elementos.
+   Transformarlo en un iterator. Mejor añadir una función que sea iterator y dejar la función actual como está
+
+2. Implementar un método para detectar espacios isomorfos. Leer Posets on up to 16 points de Gunnar Brinkmann
+
+3. Mirar el Think Python y tratar las excepciones donde convenga
+
+5. En la clase Topo comprobar que se trata de un espacio topológico antes de crearlo
+
+6. Probar el método Topo.graph
+
+7. En el método __init__ de Topo hay que checkear que realmente se trata de un espacio topológico
+
+8. La función descendencia no funciona bien con Abiertos =  [[1, 2, 3, 4], [1, 2, 3], [1, 2], [2], [1], []]
+
+9. Quitar la gestión de ciclos en Topo.hasse2
+
+10.La última de 4 puntos creo que está mal
+
+Actualmente haciendo: desarrollo del método hasse2
+
+*************************************************************************
+
+9 de Marzo de 2014
+
+Tengo una función que me dice si dos segmentos cortan. No funciona hay divisiones por cero
+
+Pues hay que utilizarla para calcular el número de cruces de un mapa.
+
+
+15 de Abril
+
+Objetivo: preparar la aplicación topolab para presentar el diagrama de Hasse
+
+Vamos a hacerlo con el controller hasse y la función topo1
+
+
+Cada vez que cambiamos la versión del controlado tenemos que hacer una copia de todas las views
+del controlador.

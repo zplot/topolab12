@@ -1,0 +1,5 @@
+2014-04-26 10:44:51,406 INFO 24813 4532240384 topo4():63 Salgo de topo4
+2014-04-26 10:44:51,480 INFO 24813 4532240384 prueba1():68 Entro en prueba1
+2014-04-26 10:44:51,480 INFO 24813 4532240384 prueba1():70 Salgo de prueba1
+2014-04-26 10:44:51,480 INFO 24813 4532240384 my_hasse1():28 Entro en matplotlib -> my_hasse1
+2014-04-26 10:44:51,492 INFO 24813 4532240384 my_hasse1():37 Salgo de matplotlib -> my_hasse1

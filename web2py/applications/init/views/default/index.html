@@ -1,0 +1,456 @@
+﻿<!DOCTYPE html>
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+
+<!-- Basic Page Needs
+================================================== -->
+<meta charset="utf-8">
+<title>Math & Code</title>
+<link rel="icon" href="{{=URL('static', 'favicon.ico')}}" type="image/x-icon" />
+
+
+<!-- Mobile Specific
+================================================== -->
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<!-- CSS
+================================================== -->
+<link rel="stylesheet" type="text/css" href="{{=URL('static', 'css/style.css')}}">
+<link rel="stylesheet" type="text/css" href="{{=URL('static', 'css/boxed.css')}}" id="layout">
+<link rel="stylesheet" type="text/css" href="{{=URL('static', 'css/green.css')}}" id="colors">
+
+<!-- Java Script
+================================================== -->
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script src="{{=URL('static', 'js/custom.js')}}"></script>
+<script src="{{=URL('static', 'js/selectnav.js')}}"></script>
+<script src="{{=URL('static', 'js/flexslider.js')}}"></script>
+<script src="{{=URL('static', 'css/js/twitter.js')}}"></script>
+<script src="{{=URL('static', 'js/tooltip.js')}}"></script>
+<script src="{{=URL('static', 'js/effects.js')}}"></script>
+<script src="{{=URL('static', 'js/fancybox.js')}}"></script>
+<script src="{{=URL('static', 'js/carousel.js')}}"></script>
+<script src="{{=URL('static', 'js/isotope.js')}}"></script>
+<script src="{{=URL('static', 'js/jquery-easing-1.3.js')}}"></script>
+<script src="{{=URL('static', 'js/jquery-transit-modified.js')}}"></script>
+<script src="{{=URL('static', 'js/layerslider.transitions.js')}}"></script>
+<script src="{{=URL('static', 'js/layerslider.kreaturamedia.jquery.js')}}"></script>
+
+
+
+</head>
+<body>
+
+<!-- Wrapper Start -->
+<div id="wrapper">
+
+
+<!-- Header
+================================================== -->
+
+<!-- 960 Container -->
+<div class="container ie-dropdown-fix">
+
+	<!-- Header -->
+	<div id="header">
+
+		<!-- Logo -->
+		<div class="eight columns">
+			<div id="logo">
+				<a href="#"><img src="{{=URL('static', 'images/logo4.png')}}" alt="logo" /></a>
+				<!--<div id="tagline">Your math lab in the web</div>-->
+				<div class="clear"></div>
+			</div>
+		</div>
+
+		<!-- Social / Contact -->
+		<div class="eight columns">
+			
+			<!-- Social Icons -->
+			<ul class="social-icons">
+				<li class="facebook"><a href="#">Facebook</a></li>
+				<li class="twitter"><a href="#">Twitter</a></li>
+				<li class="dribbble"><a href="#">Dribbble</a></li>
+				<li class="linkedin"><a href="#">LinkedIn</a></li>
+				<li class="pintrest"><a href="#">Pintrest</a></li>
+			</ul>
+			
+			<div class="clear"></div>
+			
+			<!-- Contact Details -->
+			<div id="contact-details">
+				<ul>
+					<li><i class="mini-ico-envelope"></i><a href="#">ring@topolab.org</a></li>
+					<li><i class="mini-ico-user"></i>Luis Fontes</li>
+				</ul>
+			</div>
+
+		</div>
+
+	</div>
+	<!-- Header / End -->
+	
+	<!-- Navigation -->
+	<div class="sixteen columns">
+
+		<div id="navigation">
+			<ul id="nav">
+
+				<li><a id="current" href="index.html">Home</a></li>
+
+				<li><a href="#">Topology</a>
+					<ul>
+                        <li><a href="#">Graphs</a></li>
+                        <li><a href="#">Hypergraphs</a></li>
+                        <li><a href="#">Complexes</a></li>
+                        <li><a href="#">Finite topologies</a>
+                            <ul>
+                                <li><a href="{{=URL(a='init',c='hasse',f='topo1')}}">Hasse diagram</a></li>
+                                <li><a href="#">Fundamental Group</a></li>
+                                <li><a href="#">Covering Space</a></li>
+                                <li><a href="#">Homotopy Types</a></li>
+                            </ul>
+                        </li>
+					</ul>
+				</li>
+
+				<li><a href="#">Algebra</a>
+                    <ul>
+                        <li><a href="#">Finite Groups</a></li>
+                        <li><a href="#">Galois Theory</a></li>
+                        <li><a href="#">Geometric Algebra</a></li>
+                        <li><a href="#">Number Theory</a></li>
+					</ul>
+                </li>
+
+				<li><a href="#">Mathematicians</a>
+					<ul>
+						<li><a href="#">Joan S. Birman</a></li>
+						<li><a href="#">Eriko Hironaka</a></li>
+						<li><a href="#">David Mumford</a></li>
+						<li><a href="#">Peter David Lax</a></li>
+					</ul>
+				</li>
+
+				<li><a href="#">Blog</a></li>
+				<li><a href="#">Contact</a></li>
+
+			</ul>
+
+			<!-- Search Form -->
+			<div class="search-form">
+				<form method="get" action="#">
+					<input type="text" class="search-text-box" />
+				</form>
+			</div>
+
+		</div> 
+		<div class="clear"></div>
+		
+	</div>
+	<!-- Navigation / End -->
+
+</div>
+<!-- 960 Container / End -->
+
+
+<!-- Content
+================================================== -->
+
+<!-- LayerSlider Container -->
+<div class="layerslider-container">
+
+	<!-- LayerSlider / Start -->
+	<div id="layerslider" style="width: 940px; height: 325px; margin: 0 auto;">
+
+            <!-- Slide #001 -->
+			<div class="ls-layer" style="transition2d: 5; slidedelay: 5000;">
+
+				<!-- Background -->
+				<img class="ls-bg" src="{{=URL('static', 'images/slider-img-001.jpg')}}" alt="">
+
+			</div>
+
+
+		 
+			<!-- Slide #1 -->
+			<div class="ls-layer" style="transition2d: 67; timeshift: -1000; slidedelay: 5000;">
+		 
+				<!-- Background -->
+				<img class="ls-bg" src="{{=URL('static', 'images/slider-img-01.jpg')}}" alt="" >
+
+				<div class="slide-caption alt ls-s1" style="left: 0; top: 0; height: 100%; width: 30%;
+				slidedirection: left; slideoutdirection: left; durationin: 800; durationout: 800; delayin: 0;
+				delayout: 0;">
+					<h3>Alain Connes</h3>
+					<h4><em>Noncommutative Geometry</em></h4>
+                    <p>Collège of France, l'Institut des Hautes Études Scientifiques,
+                        and The Ohio State University; Fields Medal.</p>
+                    <p>When you get started, to really become a mathematician, the key step is to realize that at some point you have to stop reading books. You have to think on your own. You have to become your own authority.</p>
+				</div>
+
+			</div>
+			
+			<!-- Slide #2 -->
+			<div class="ls-layer" style="transition2d: 3; timeshift: -1000; slidedelay: 5000;">
+		 
+				<!-- Background -->
+				<img class="ls-bg" src="{{=URL('static', 'images/slider-img-02.jpg')}}" alt="">
+				
+				<div class="slide-caption alt ls-s1" style="left: 0; top: 0; height: 100%; width: 30%; slidedirection: left; slideoutdirection: left; durationin: 800; durationout: 800; delayin: 0; delayout: 0;">
+					<h3>John Horton Conway </h3>
+                    <h4><em>Group Theory, Number Theory, Geometry, Combinatorics, Game Theory</em></h4>
+					<p>What's the ontology of mathematical things?... There's no doubt that they do exist but you can't poke and prod them except by thinking about them. It's quite astonishing and I still don't understand it having been a mathematician all my life..</p>
+				</div>
+
+			</div>
+			
+			<!-- Slide #3 -->
+			<div class="ls-layer" style="transition2d: 5; slidedelay: 5000;">
+		 
+				<!-- Background -->
+				<img class="ls-bg" src="{{=URL('static', 'images/slider-img-03.jpg')}}" alt="">
+                <div class="slide-caption alt ls-s1" style="left: 0; top: 0; height: 100%; width: 30%; slidedirection: left; slideoutdirection: left; durationin: 800; durationout: 800; delayin: 0; delayout: 0;">
+					<h3>Sir Michael Francis Atiyah </h3>
+                    <h4><em>Algebraic Topology, Algebraic Geometry</em></h4>
+					<p>Former Master of Trinity College, University of Cambridge; first Director of the Isaac Newton
+                        Institute, Cambridge; and Honorary Professor of Mathematics,
+                        University of Edinburgh; Fields Medal, Abel Prize.</p>
+                    <p>For me, just as there is only one world, even if parts of it are more familiar than others,
+                        so there is only one mathematics.</p>
+				</div>
+
+			</div>
+        <!-- Slide #4 -->
+			<div class="ls-layer" style="transition2d: 5; slidedelay: 5000;">
+
+				<!-- Background -->
+				<img class="ls-bg" src="{{=URL('static', 'images/slider-img-04.jpg')}}" alt="">
+                <div class="slide-caption alt ls-s1" style="left: 0; top: 0; height: 100%; width: 30%; slidedirection: left; slideoutdirection: left; durationin: 800; durationout: 800; delayin: 0; delayout: 0;">
+					<h3>Marie-France Vigneras</h3>
+                    <h4><em>Algebraic Number Theory</em></h4>
+					<p>Langlands Program. Institut de Mathématiques de Jussieu, Paris</p>
+                    <p>As mathematicians, we play and dream but we don't cheat. You can't cheat in mathematics. Truth
+                        is so important. To solve a problem with a proof is exciting and rewarding because it is true foreverº.</p>
+				</div>
+
+			</div>
+        <!-- Slide #5 -->
+			<div class="ls-layer" style="transition2d: 5; slidedelay: 5000;">
+
+				<!-- Background -->
+				<img class="ls-bg" src="{{=URL('static', 'images/slider-img-05.jpg')}}" alt="">
+                <div class="slide-caption alt ls-s1" style="left: 0; top: 0; height: 100%; width: 30%; slidedirection: left; slideoutdirection: left; durationin: 800; durationout: 800; delayin: 0; delayout: 0;">
+					<h3>Friedrich E. Hirzebruch</h3>
+                    <h4><em>Topology, Differential Geometry, Complex Analysis</em></h4>
+					<p>University of Bonn</p>
+                    <p>In March of 1945, I became a soldier and in April, a prisoner of war, surviving in the meadows along the Rhine, always under the open sky in rain and sunshine, scribbling mathematics on toilet paper, the only paper available.</p>
+				</div>
+
+			</div>
+		 
+	</div>
+	<!-- LayerSlider / End -->
+
+</div>
+<!-- LayerSlider Container / End -->
+
+
+<!-- 960 Container -->
+<div class="container">
+
+	<!-- Icon Boxes -->
+	<div class="icon-box-container">
+
+		<!-- Icon Box Start -->
+		<div class="one-third column">
+			<div class="icon-box">
+				<i class="ico-display" style="margin-left: -10px;"></i>
+				<h3>Math fun on the web</h3>
+				<p>You can try, test and experiment in this laboratory some of the main topics in algebra and topology.
+                    .</p>
+			</div>
+		</div>
+		<!-- Icon Box End -->
+		
+		<!-- Icon Box Start -->
+		<div class="one-third column">
+			<div class="icon-box">
+				<i class="ico-cogwheel"></i>
+				<h3>It is a dynamical web</h3>
+				<p>Certainly, you can interact with your favourite math objects: topologies, groups, numbers, ideals,
+                    etc .</p>
+			</div>
+		</div>
+		<!-- Icon Box End -->
+		
+		<!-- Icon Box Start -->
+		<div class="one-third column">
+			<div class="icon-box">
+				<i class="ico-iphone"></i>
+				<h3>Also on mobiles and tablets</h3>
+				<p>Let's try it..</p>
+			</div>
+		</div>
+		<!-- Icon Box End -->
+		
+	</div>
+	<!-- Icon Boxes / End -->
+	
+</div>
+<!-- 960 Container / End -->
+
+<!-- 960 Container -->
+<div class="container">
+
+	<div class="sixteen columns">
+		<!-- Headline -->
+		<div class="headline no-margin"><h3>Projects</h3></div>
+	</div>
+	
+	<!-- Project -->
+	<div class="four columns">
+		<div class="picture">
+            <a href="{{=URL(a='init',c='hasse',f='topo1')}}">
+                <img src="{{=URL('static', 'images/portfolio/topo1.jpg')}}" alt=""/>
+                <div class="image-overlay-link">
+                </div>
+            </a>
+        </div>
+		<div class="item-description">
+			<h5><a href="{{=URL(a='init',c='hasse',f='topo1')}}">Finite Topologies</a></h5>
+			<p>Hasse Diagrams, Homotopy Types, Fundamental Group, Combinatorics, Posets.</p>
+		</div>
+	</div>
+	
+	<!-- Project -->
+	<div class="four columns">
+		<div class="picture"><img src="{{=URL('static', 'images/portfolio/escher1.gif')}}" alt=""/><div class="image-overlay-zoom"></div></div>
+		<div class="item-description">
+			<h5><a href="#">Simplicial Complexes</a></h5>
+			<p>We don't know yet what will we do in relation to simplicial complexes. Please be patient...</p>
+		</div>
+	</div>
+	
+	<!-- Project -->
+	<div class="four columns">
+		<div class="picture"><img src="{{=URL('static',
+        'images/portfolio/galois1.jpg')}}" alt=""/><div class="image-overlay-link"></div></div>
+		<div class="item-description">
+			<h5><a href="#">Galois Groups</a></h5>
+			<p>Galois group calculation of any polynomial. The processing will be based in Magma computing software
+                .</p>
+		</div>
+	</div>
+	
+	<!-- Project -->
+	<div class="four columns">
+		<div class="picture"><img src="{{=URL('static',
+        'images/portfolio/number1.jpg')}}" alt=""/><div class="image-overlay-link"></div></div>
+		<div class="item-description">
+			<h5><a href="#">Number Theory</a></h5>
+			<p>We don't know yet what will we do in relation to number theory. Please be patient...</p>
+		</div>
+	</div>
+	
+</div>
+<!-- 960 Container / End -->
+
+
+<!-- 960 Container -->
+<div class="container">
+	<div class="sixteen columns">
+	
+		<!-- Headline -->
+		<div class="headline no-margin"><h3>Other topics</h3></div>
+		
+		<ul class="client-list">
+			<li><img src="{{=URL('static', 'images/interests/torus1.jpg')}}" alt="Algebraic Topology"/></li>
+			<li><img src="{{=URL('static', 'images/interests/algebraic_geometry.jpg')}}" alt="Computational
+			Topology"/></li>
+			<li><img src="{{=URL('static', 'images/interests/computational_topology.jpg')}}" alt="Graphs and
+			Hypergraphs"/></li>
+			<li><img src="{{=URL('static', 'images/interests/python.jpg')}}" alt="Differential Geometry"/></li>
+			<li><img src="{{=URL('static', 'images/interests/web2py.jpg')}}" alt="Geometry"/></li>
+		</ul>
+		
+	</div>
+</div>
+<!-- 960 Container / End -->
+
+</div>
+<!-- Wrapper / End -->
+
+
+<!-- Footer
+================================================== -->
+
+<!-- Footer Start -->
+<div id="footer">
+	<!-- 960 Container -->
+	<div class="container">
+	
+		<!-- About -->
+		<div class="four columns">
+			<div class="footer-headline"><h4>About Us</h4></div>
+			<p>Math student at UCM Madrid. My main interests are group theory, algebra, topology, set theory,
+                programming,
+                web development, python, web2py, photography, philosophy, rugby, wine, quantum mechanics,
+                philosophy of physics.</p>
+			<p>Always learning.</p>
+		</div>
+		
+		<!-- Useful Links -->
+		<div class="four columns">
+			<div class="footer-headline"><h4>Useful Links</h4></div>
+			<ul class="links-list">
+				<li><a href="http://math.ucr.edu/home/baez/">John Baez's Stuff</a></li>
+				<li><a href="http://www.mat.ucm.es/~vmunozve/">Vicente Muñoz's Stuff</a></li>
+				<li><a href="http://196884.com/">196.884</a></li>
+				<li><a href="http://sahandsaba.com/">Math u Code</a></li>
+				<li><a href="http://math-blog.com/">Math blog</a></li>
+				<li><a href="http://golem.ph.utexas.edu/category/">The n-Category Café</a></li>
+				<li><a href="http://mathsexperiences.wordpress.com/">Mathematics in Canada</a></li>
+			</ul>
+		</div>
+		
+		<!-- Photo Stream -->
+		<div class="four columns">
+			<div class="footer-headline"><h4>Photo Gallery</h4></div>
+			<div class="flickr-widget">
+				<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=6&amp;display=latest&amp;size=s&amp;layout=x&amp;source=user&amp;user=124098065@N04"></script>
+				<div class="clear"></div>
+			</div>
+		</div>
+		
+		<!-- Latest Tweets -->
+		<div class="four columns">
+			<div class="footer-headline"><h4>Latest News</h4></div>
+			<p>This is a prototype website for computational and discrete mathematics. The server is programmed in
+                Python and the excelent web2py web framwork is used to make it available in Internet.</p>
+			<p>Suggestions and comments are welcome.</p>
+		</div>
+
+		<!-- Footer / Bottom -->
+		<div class="sixteen columns">
+			<div id="footer-bottom">
+				© Copyright 2014 by <a href="#">Luis Fontes</a>. web2py Web Framework
+created by <a href="http://www.cdm.depaul.edu/People/Pages/facultyinfo.aspx?fid=343">Massimo Di Pierro</a>
+				<div id="scroll-top-top"><a href="#"></a></div>
+			</div>
+		</div>
+
+	</div>
+	<!-- 960 Container / End -->
+
+</div>
+<!-- Footer / End -->
+
+
+
+
+
+</body>
+</html>
