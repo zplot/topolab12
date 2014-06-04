@@ -526,7 +526,7 @@ def main():
     print '.............'
     e3 = e1 * (e1 - 2 * e2) * (-1)
     print e3
-    print 'probamos git 23:41'
+    print 'probamos git 09:08'
 
 
 
