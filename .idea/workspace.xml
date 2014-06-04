@@ -1,179 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd9ec0ba-69f8-4b24-81b8-1790759b3783" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/base.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/base.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/base.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/base.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/beige.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/beige.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/beige.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/beige.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/beige.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/beige.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/blue.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/blue.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/blue.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/blue.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/boxed.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/boxed.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/boxed.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/boxed.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/boxed.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/boxed.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/brown.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/brown.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/brown.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/brown.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/brown.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/brown.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/carousel.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/carousel.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/carousel.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/carousel.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/celadon.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/celadon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/celadon.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/celadon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/celadon.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/celadon.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/cherry.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/cherry.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/cherry.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/cherry.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/cherry.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/cherry.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/contact.php" afterPath="$PROJECT_DIR$/web2py/applications/init/static/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/contact.php" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/contact.php" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/contact.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/admin/languages/cs.py" afterPath="$PROJECT_DIR$/web2py/applications/admin/languages/cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/languages/cs.py" afterPath="$PROJECT_DIR$/web2py/applications/init/languages/cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/languages/cs.py" afterPath="$PROJECT_DIR$/web2py/applications/integrado/languages/cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/languages/cs.py" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/languages/cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/topolab/languages/cs.py" afterPath="$PROJECT_DIR$/web2py/applications/topolab/languages/cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/topolab_pruebas/languages/cs.py" afterPath="$PROJECT_DIR$/web2py/applications/topolab_pruebas/languages/cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/welcome/languages/cs.py" afterPath="$PROJECT_DIR$/web2py/applications/welcome/languages/cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/custom.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/custom.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/custom.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/custom.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/cyan.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/cyan.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/cyan.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/cyan.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/cyan.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/cyan.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/dark.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/dark.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/dark.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/dark.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/dirty-green.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/dirty-green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/dirty-green.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/dirty-green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/dirty-green.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/dirty-green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/effects.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/effects.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/effects.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/effects.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/extras/epydoc/epydoc.conf" afterPath="$PROJECT_DIR$/web2py/extras/epydoc/epydoc.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/examples/static/epydoc/epydoc.css" afterPath="$PROJECT_DIR$/web2py/applications/examples/static/epydoc/epydoc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/extras/epydoc/epydoc.css" afterPath="$PROJECT_DIR$/web2py/extras/epydoc/epydoc.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/fancybox.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/fancybox.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/fancybox.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/fancybox.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/fancybox.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/fancybox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/fancybox.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/fancybox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/fancybox.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/fancybox.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/flexslider.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/flexslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/flexslider.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/flexslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/flexslider.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/flexslider.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/gluon/contrib/fpdf/fonts.py" afterPath="$PROJECT_DIR$/web2py/gluon/contrib/fpdf/fonts.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/views/stepone/generic.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado/views/stepone/generic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/views/stepone/generic.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/views/stepone/generic.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/examples/static/epydoc/gluon.dal-module.html" afterPath="$PROJECT_DIR$/web2py/applications/examples/static/epydoc/gluon.dal-module.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/gray.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/gray.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/gray.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/gray.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/gray.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/gray.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/green.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/green.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/green.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/green.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/green.css" />
+    <list default="true" id="fd9ec0ba-69f8-4b24-81b8-1790759b3783" name="Default" comment=" Commit de las 9:22">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/private/group_rings_sec_gen_v3.py" afterPath="$PROJECT_DIR$/web2py/applications/init/private/group_rings_sec_gen_v3.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/index.html" afterPath="$PROJECT_DIR$/web2py/applications/init/static/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/views/stepone/index.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado/views/stepone/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/views/stepone/index.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/views/stepone/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/isotope.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/isotope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/isotope.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/isotope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/isotope.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/isotope.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/jquery.gmap.min.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/jquery.gmap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/jquery.gmap.min.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/jquery.gmap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/jquery.gmap.min.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/jquery.gmap.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/views/layout.html" afterPath="$PROJECT_DIR$/web2py/applications/init/views/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/views/layout.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado/views/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/views/layout.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/views/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/views/layout2.html" afterPath="$PROJECT_DIR$/web2py/applications/init/views/layout2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/views/layout2.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado/views/layout2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/views/layout2.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/views/layout2.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/views/layout3.html" afterPath="$PROJECT_DIR$/web2py/applications/init/views/layout3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/views/layout3.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado/views/layout3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/views/layout3.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/views/layout3.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/views/layout_centum.html" afterPath="$PROJECT_DIR$/web2py/applications/init/views/layout_centum.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/views/layout_centum.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado/views/layout_centum.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/views/layout_centum.html" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/views/layout_centum.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/examples/static/markmin.html" afterPath="$PROJECT_DIR$/web2py/applications/examples/static/markmin.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/navy.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/navy.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/navy.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/navy.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/navy.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/navy.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/olive.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/olive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/olive.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/olive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/olive.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/olive.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/orange.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/orange.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/orange.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/orange.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/orange.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/orange.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/peach.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/peach.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/peach.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/peach.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/peach.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/peach.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/gluon/contrib/fpdf/php.py" afterPath="$PROJECT_DIR$/web2py/gluon/contrib/fpdf/php.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/pink.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/pink.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/pink.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/pink.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/pink.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/pink.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/languages/plural-cs.py" afterPath="$PROJECT_DIR$/web2py/applications/init/languages/plural-cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/languages/plural-cs.py" afterPath="$PROJECT_DIR$/web2py/applications/integrado/languages/plural-cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/languages/plural-cs.py" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/languages/plural-cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/topolab/languages/plural-cs.py" afterPath="$PROJECT_DIR$/web2py/applications/topolab/languages/plural-cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/topolab_pruebas/languages/plural-cs.py" afterPath="$PROJECT_DIR$/web2py/applications/topolab_pruebas/languages/plural-cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/welcome/languages/plural-cs.py" afterPath="$PROJECT_DIR$/web2py/applications/welcome/languages/plural-cs.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/purple.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/purple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/purple.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/purple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/purple.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/purple.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/red.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/red.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/red.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/red.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/red.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/red.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/selectnav.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/selectnav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/selectnav.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/selectnav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/selectnav.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/selectnav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/extras/build_web2py/setup_exe.conf" afterPath="$PROJECT_DIR$/web2py/extras/build_web2py/setup_exe.conf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/skeleton.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/skeleton.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/skeleton.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/skeleton.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/skeleton.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/skeleton.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/switcher.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/switcher.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/switcher.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/switcher.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/switcher.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/switcher.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/switcher.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/switcher.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/switcher.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/switcher.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/switcher.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/switcher.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/tooltip.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/tooltip.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/tooltip.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/tooltip.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/gluon/contrib/fpdf/ttfonts.py" afterPath="$PROJECT_DIR$/web2py/gluon/contrib/fpdf/ttfonts.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/js/twitter.js" afterPath="$PROJECT_DIR$/web2py/applications/init/static/js/twitter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/js/twitter.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/js/twitter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/twitter.js" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/js/twitter.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/twitter.php" afterPath="$PROJECT_DIR$/web2py/applications/init/static/twitter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/twitter.php" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/twitter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/twitter.php" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/twitter.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/gluon/contrib/pg8000/util.py" afterPath="$PROJECT_DIR$/web2py/gluon/contrib/pg8000/util.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/admin/static/css/web2py_bootstrap.css" afterPath="$PROJECT_DIR$/web2py/applications/admin/static/css/web2py_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/examples/static/css/web2py_bootstrap.css" afterPath="$PROJECT_DIR$/web2py/applications/examples/static/css/web2py_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/web2py_bootstrap.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/web2py_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/web2py_bootstrap.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/web2py_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/web2py_bootstrap.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/web2py_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/topolab/static/css/web2py_bootstrap.css" afterPath="$PROJECT_DIR$/web2py/applications/topolab/static/css/web2py_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/topolab_pruebas/static/css/web2py_bootstrap.css" afterPath="$PROJECT_DIR$/web2py/applications/topolab_pruebas/static/css/web2py_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/welcome/static/css/web2py_bootstrap.css" afterPath="$PROJECT_DIR$/web2py/applications/welcome/static/css/web2py_bootstrap.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/admin/static/css/web2py_bootstrap_nojs.css" afterPath="$PROJECT_DIR$/web2py/applications/admin/static/css/web2py_bootstrap_nojs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/examples/static/css/web2py_bootstrap_nojs.css" afterPath="$PROJECT_DIR$/web2py/applications/examples/static/css/web2py_bootstrap_nojs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/web2py_bootstrap_nojs.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/web2py_bootstrap_nojs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/web2py_bootstrap_nojs.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/web2py_bootstrap_nojs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/web2py_bootstrap_nojs.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/web2py_bootstrap_nojs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/topolab/static/css/web2py_bootstrap_nojs.css" afterPath="$PROJECT_DIR$/web2py/applications/topolab/static/css/web2py_bootstrap_nojs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/topolab_pruebas/static/css/web2py_bootstrap_nojs.css" afterPath="$PROJECT_DIR$/web2py/applications/topolab_pruebas/static/css/web2py_bootstrap_nojs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/welcome/static/css/web2py_bootstrap_nojs.css" afterPath="$PROJECT_DIR$/web2py/applications/welcome/static/css/web2py_bootstrap_nojs.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/wide.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/wide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/wide.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/wide.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/wide.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/wide.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/yellow.css" afterPath="$PROJECT_DIR$/web2py/applications/init/static/css/colors/yellow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/yellow.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado/static/css/colors/yellow.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/yellow.css" afterPath="$PROJECT_DIR$/web2py/applications/integrado2/static/css/colors/yellow.css" />
     </list>
     <ignored path="topolab12.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path=".idea/" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -205,7 +39,7 @@
     <SUITE FILE_PATH="coverage/topolab12$modulo53_v8.coverage" NAME="modulo53_v8 Coverage Results" MODIFIED="1398708473870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/topolab/modules" />
     <SUITE FILE_PATH="coverage/topolab12$prueba_S3_no_global.coverage" NAME="prueba_S3_no_global Coverage Results" MODIFIED="1401532567621" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/init/private" />
     <SUITE FILE_PATH="coverage/topolab12$exp21.coverage" NAME="exp21 Coverage Results" MODIFIED="1400523618284" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/init/modules" />
-    <SUITE FILE_PATH="coverage/topolab12$group_rings_sec_gen_v3.coverage" NAME="group_rings_sec_gen_v3 Coverage Results" MODIFIED="1401795746172" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/init/private" />
+    <SUITE FILE_PATH="coverage/topolab12$group_rings_sec_gen_v3.coverage" NAME="group_rings_sec_gen_v3 Coverage Results" MODIFIED="1401866341713" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/init/private" />
     <SUITE FILE_PATH="coverage/topolab12$exp24.coverage" NAME="exp24 Coverage Results" MODIFIED="1400687571443" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/init/modules" />
     <SUITE FILE_PATH="coverage/topolab12$group_rings_v5.coverage" NAME="group_rings_v5 Coverage Results" MODIFIED="1401477320337" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/init/private" />
     <SUITE FILE_PATH="coverage/topolab12$group_rings_v4.coverage" NAME="group_rings_v4 Coverage Results" MODIFIED="1400865930628" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/web2py/applications/init/private" />
@@ -229,7 +63,7 @@
       <file leaf-file-name="group_rings_sec_gen_v3.py" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web2py/applications/init/private/group_rings_sec_gen_v3.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.87053573" vertical-offset="7002" max-vertical-offset="7910">
+            <state vertical-scroll-proportion="0.665066" vertical-offset="6838" max-vertical-offset="7910">
               <caret line="528" column="29" selection-start-line="528" selection-start-column="29" selection-end-line="528" selection-end-column="29" />
               <folding />
             </state>
@@ -319,9 +153,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="y" value="22" />
-    <option name="width" value="1440" />
-    <option name="height" value="824" />
+    <option name="x" value="71" />
+    <option name="y" value="27" />
+    <option name="width" value="1585" />
+    <option name="height" value="1193" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -349,6 +184,7 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -363,12 +199,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topolab12_v2" />
+              <option name="myItemId" value="topolab12" />
               <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web2py" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyLibDirNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -377,90 +209,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="topolab12_v2" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
               <option name="myItemId" value="topolab12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="topolab12_v2" />
               <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="init" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="topolab12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="topolab12_v2" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="init" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="private" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="topolab12" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="topolab12_v2" />
-              <option name="myItemType" value="com.jetbrains.web2py.projectView.Web2PyBaseDirNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="applications" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="init" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="modules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="recentsLimit" value="5" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="FullScreen" value="false" />
-    <property name="options.lastSelected" value="settings.github" />
+    <property name="options.lastSelected" value="project.propVCSSupport.Ignored.Files" />
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.idea" />
     <property name="LayoutCode.rearrangeEntriesPython" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
@@ -491,7 +260,7 @@
       <recent name="$PROJECT_DIR$/web2py/applications/init/static" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests in gr_unit_tests_v2">
+  <component name="RunManager" selected="Python.group_rings_sec_gen_v3">
     <configuration default="false" name="group_rings_sec_gen_v2.py" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" uri="http://www.topolab.org/web2py/applications/init/private/group_rings_sec_gen_v2.py">
       <RunnerSettings RunnerId="JavascriptDebugRunner" />
       <ConfigurationWrapper RunnerId="JavascriptDebugRunner" />
@@ -753,8 +522,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Python tests.Unittests in gr_unit_tests_v2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.group_rings_sec_gen_v3" />
+        <item index="0" class="java.lang.String" itemvalue="Python.group_rings_sec_gen_v3" />
+        <item index="1" class="java.lang.String" itemvalue="Python tests.Unittests in gr_unit_tests_v2" />
         <item index="2" class="java.lang.String" itemvalue="Python.group_rings_sec_gen_v2" />
         <item index="3" class="java.lang.String" itemvalue="Python tests.Unittests in gr_unit_tests_v1" />
         <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.group_rings_sec_gen_v2.py" />
@@ -800,34 +569,54 @@
       <created>1401831568815</created>
       <updated>1401831568815</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=" Primer commit local">
+      <created>1401865797912</created>
+      <updated>1401865797912</updated>
+    </task>
+    <task id="LOCAL-00009" summary=" Primer commit local">
+      <created>1401865965733</created>
+      <updated>1401865965733</updated>
+    </task>
+    <task id="LOCAL-00010" summary=" Commit de las 9:17">
+      <created>1401866301504</created>
+      <updated>1401866301504</updated>
+    </task>
+    <task id="LOCAL-00011" summary=" Commit de las 9:21">
+      <created>1401866507248</created>
+      <updated>1401866507248</updated>
+    </task>
+    <task id="LOCAL-00012" summary=" Commit de las 9:22">
+      <created>1401866558159</created>
+      <updated>1401866558159</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="22" width="1440" height="824" extended-state="6" />
+    <frame x="71" y="27" width="1585" height="1193" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28672317" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18883722" sideWeight="0.49967596" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32768363" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32927817" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.07081545" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14128321" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33036438" sideWeight="0.5371267" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3286119" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18883722" sideWeight="0.5003241" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286119" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32927817" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.28531075" sideWeight="0.22048998" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.13948497" sideWeight="0.7795802" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33036438" sideWeight="0.46287328" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.27154893" sideWeight="0.7795802" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3116279" sideWeight="0.46273494" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32793522" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32793522" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -863,13 +652,18 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
     <MESSAGE value="Primer commit" />
     <MESSAGE value="Segundo commit" />
     <MESSAGE value=" Primer commit local" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Primer commit local" />
+    <MESSAGE value=" Commit de las 9:17" />
+    <MESSAGE value=" Commit de las 9:21" />
+    <MESSAGE value=" Commit de las 9:22" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Commit de las 9:22" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1290,7 +1084,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web2py/applications/init/private/group_rings_sec_gen_v3.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87053573" vertical-offset="7002" max-vertical-offset="7910">
+        <state vertical-scroll-proportion="0.665066" vertical-offset="6838" max-vertical-offset="7910">
           <caret line="528" column="29" selection-start-line="528" selection-start-column="29" selection-end-line="528" selection-end-column="29" />
           <folding />
         </state>
