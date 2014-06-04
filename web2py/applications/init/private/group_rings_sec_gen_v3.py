@@ -198,15 +198,20 @@ class Group(object):
                 group_order_divisors.append(x)
         print group_order_divisors
 
-        elements_with_unit=list(self.elements)
-
-        posibles_sin_unit = []
+        elements_with_unit = list(self.elements)
+        where_is_unit = index(elements_with_unit, self.unit)
+        del elements_with_unit[where_is_unit]
+        elements_without__unit = elements_with_unit
+        possible = []
         for n in group_order_divisors:
             # for (e1, e2, e3) in itertools.combinations_with_replacement(self.elements.values(), 3):
-            tmp.append(list(itertools.combinations(self.elements, n)))
+            tmp1 = list(itertools.combinations(self.elements, n-1))
+            tmp1.append(self.unit)
+            possible.append(tmp1)
 
 
-        return tmp
+
+        return possible
 
 
 
