@@ -70,6 +70,19 @@ class GroupsTestCase(unittest.TestCase):
 
         self.assertFalse(Q8Falso.is_group)
 
+    def test_4(self):
+        S3 = Group('S3', {'g1': 1, 'g2': 2, 'g3': 3, 'g4': 4, 'g5': 5, 'g6': 6},
+               [[1, 2, 3, 4, 5, 6],
+                [2, 1, 4, 3, 6, 5],
+                [3, 5, 1, 6, 2, 4],
+                [4, 6, 2, 5, 1, 3],
+                [5, 3, 6, 1, 4, 2],
+                [6, 4, 5, 2, 3, 1]])
+
+        self.assertTrue(S3.closed_subset([S3.g1, S3.g4, S3.g5]))
+
+
+
 
 class GroupRingsTestCase(unittest.TestCase):
 

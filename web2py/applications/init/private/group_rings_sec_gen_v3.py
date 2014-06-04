@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 
 from __future__ import division
-from sympy import *
+# from sympy.ntheory import factorint
 import itertools
 
 
@@ -39,6 +39,17 @@ def find_element_in_list(element, list1):
 
 
 class Group(object):
+    """
+    Finite groups class.
+    Example:
+    S3 = Group('S3', {'g1': 1, 'g2': 2, 'g3': 3, 'g4': 4, 'g5': 5, 'g6': 6},
+               [[1, 2, 3, 4, 5, 6],
+                [2, 1, 4, 3, 6, 5],
+                [3, 5, 1, 6, 2, 4],
+                [4, 6, 2, 5, 1, 3],
+                [5, 3, 6, 1, 4, 2],
+                [6, 4, 5, 2, 3, 1]])
+    """
     def __init__(self, name, element_names, table):
         self.name = name
         self.element_names = element_names
@@ -82,7 +93,7 @@ class Group(object):
         """
         Test if the group is Abelian
         Example:
-        print 'S3.is_abelian = ', S3.is_abelian
+        print S3.is_abelian
         """
         if self._is_abelian is not None:
             return self._is_abelian
@@ -99,13 +110,27 @@ class Group(object):
         """
         Order of the group
         Example:
-        print 'S3.order = ', S3.order
+        print S3.order
         """
         if self._order is not None:
             return self._order
 
         self._order = len(self.elements)
         return self._order
+
+    def closed_subset(self, subset):
+        """
+        Checks if subset is closed under group operation
+        subset should be a list of elements of the group
+        Example:
+        print S3.closed_subset([S3.g1, S3.g4, S3.g5])
+        """
+        subset_closed = True
+        for e1 in subset:
+            for e2 in subset:
+                if e1 * e2 not in subset:
+                    subset_closed = False
+        return subset_closed
 
     @property
     def is_group(self):
@@ -115,12 +140,13 @@ class Group(object):
 
         es_un_grupo = True
 
-
         # is closed?
+
         for e1 in self.elements.values():
             for e2 in self.elements.values():
                 if e1 * e2 not in self.elements.values():
                     es_un_grupo = False
+
 
         if es_un_grupo:
             # has unit element?
@@ -163,6 +189,32 @@ class Group(object):
 
         return es_un_grupo
 
+    @property
+    def subgroups(self):
+        group_order_divisors = []
+        orden = self.order
+        for x in range(2, orden // 2 + 1):
+            if orden / x == orden // x:
+                group_order_divisors.append(x)
+        print group_order_divisors
+
+        elements_with_unit=list(self.elements)
+
+        posibles_sin_unit = []
+        for n in group_order_divisors:
+            # for (e1, e2, e3) in itertools.combinations_with_replacement(self.elements.values(), 3):
+            tmp.append(list(itertools.combinations(self.elements, n)))
+
+
+        return tmp
+
+
+
+
+
+
+
+
 
 
 
@@ -185,11 +237,6 @@ class GroupElement(object):
     def __eq__(self, other):
         result = self.name == other.name
         return result
-
-
-
-
-
 
     def __str__(self):
         result = self.group.name + '.' + self.name
@@ -540,6 +587,23 @@ def main():
             [7, 8, 6, 5, 3, 4, 2, 1],
             [5, 7, 5, 6, 4, 3, 1, 2]])
     print Q8F.is_group
+    print
+    print '************************** Probamos is_closed ************'
+    print
+    print 'S3.closed_subset([S3.g1, S3.g4, S3.g5])', S3.closed_subset([S3.g1, S3.g4, S3.g5])
+    print
+    print
+    print '************************** Subgrupos ************'
+    print
+    print Q8.subgroups
+    C5 = Group('C5', {'g1': 1, 'g2': 2, 'g3': 3, 'g4': 4, 'g5': 5},
+               [[1, 2, 3, 4, 5],
+                [2, 3, 4, 5, 1],
+                [3, 4, 5, 1, 2],
+                [4, 5, 1, 2, 3],
+                [5, 1, 2, 3, 4]])
+    print Q8.subgroups
+
 
 
 
