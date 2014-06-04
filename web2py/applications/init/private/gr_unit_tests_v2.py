@@ -56,6 +56,21 @@ class GroupsTestCase(unittest.TestCase):
         self.assertTrue(Q8.is_group)
 
 
+    def test_3(self):
+        Q8Falso = Group('Q8', {'one': 1, 'minus_1': 2, 'i': 3, 'minus_i': 4, 'j': 5, 'minus_j': 6, 'k': 7,
+                               'minus_k': 8},
+           [[1, 2, 3, 4, 5, 6, 7, 8],
+            [2, 1, 4, 3, 6, 5, 8, 7],
+            [3, 4, 2, 1, 8, 7, 5, 6],
+            [4, 3, 1, 2, 7, 8, 6, 5],
+            [5, 6, 7, 8, 2, 1, 4, 3],
+            [6, 5, 8, 7, 1, 2, 3, 4],
+            [7, 8, 6, 5, 3, 4, 2, 1],
+            [5, 7, 5, 6, 4, 3, 1, 2]])
+
+        self.assertFalse(Q8Falso.is_group)
+
+
 class GroupRingsTestCase(unittest.TestCase):
 
     def test_1(self):

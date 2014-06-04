@@ -65,15 +65,15 @@ class Group(object):
         self._order = None
         self._unit = None
 
+
         if self.is_group:
             self.is_a_group_at = True
         else:
             self.is_a_group_at = False
             print
-            print '********************* is not a group **************************'
+            print self.name, 'is not a group'
+            print'================='
             print
-
-
 
 
 
@@ -527,6 +527,22 @@ def main():
     e3 = e1 * (e1 - 2 * e2) * (-1)
     print e3
     print 'probamos git 13:08'  # TODO: Estamoos probando esto
+    print
+    print ' ********************* Probamos grupos *************************************'
+    print
+    Q8F = Group('Q8', {'one': 1, 'minus_1': 2, 'i': 3, 'minus_i': 4, 'j': 5, 'minus_j': 6, 'k': 7, 'minus_k': 8},
+           [[1, 2, 3, 4, 5, 6, 7, 8],
+            [2, 1, 4, 3, 6, 5, 8, 7],
+            [3, 4, 2, 1, 8, 7, 5, 6],
+            [4, 3, 1, 2, 7, 8, 6, 5],
+            [5, 6, 7, 8, 2, 1, 4, 3],
+            [6, 5, 8, 7, 1, 2, 3, 4],
+            [7, 8, 6, 5, 3, 4, 2, 1],
+            [5, 7, 5, 6, 4, 3, 1, 2]])
+    print Q8F.is_group
+
+
+
 
 
 
