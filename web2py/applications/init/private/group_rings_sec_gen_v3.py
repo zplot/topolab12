@@ -196,22 +196,39 @@ class Group(object):
         for x in range(2, orden // 2 + 1):
             if orden / x == orden // x:
                 group_order_divisors.append(x)
-        print group_order_divisors
-
-        elements_with_unit = list(self.elements)
-        where_is_unit = index(elements_with_unit, self.unit)
-        del elements_with_unit[where_is_unit]
-        elements_without__unit = elements_with_unit
+        # Lets take out the unit from the list of elements
+        elements_without_unit = []
+        for e1 in self.elements:
+            if e1 != self.unit.name:
+                elements_without_unit.append(e1)
         possible = []
         for n in group_order_divisors:
-            # for (e1, e2, e3) in itertools.combinations_with_replacement(self.elements.values(), 3):
-            tmp1 = list(itertools.combinations(self.elements, n-1))
-            tmp1.append(self.unit)
-            possible.append(tmp1)
+            possible.append(list(itertools.combinations(elements_without_unit, n - 1)))  # tmp1 es una lista de tuplas
+        possible2 = []
+        for tupla in possible:
+            for subtupla in tupla:
+                list1 = list(subtupla)
+                list1.append(self.unit.name)
+                possible2.append(list1)
+
+        # Already know candidates for subgroups.They are in posible.
+        # for each candidate we will see if h * g_inverse is in the candidate
+        subgroups = []
+        for set1 in possible2:
+            is_subgroup = True
+            for g1_name in set1:
+                for g2_name in set1:
+                    g1 = self.elements[g1_name]
+                    g2 = self.elements[g2_name]
+                    result = g1 * g2.inv
+                    if result.name not in set1:
+                        is_subgroup = False
+            if is_subgroup:
+                subgroups.append(set1)
 
 
 
-        return possible
+        return subgroups
 
 
 
@@ -600,15 +617,16 @@ def main():
     print
     print '************************** Subgrupos ************'
     print
-    print Q8.subgroups
     C5 = Group('C5', {'g1': 1, 'g2': 2, 'g3': 3, 'g4': 4, 'g5': 5},
                [[1, 2, 3, 4, 5],
                 [2, 3, 4, 5, 1],
                 [3, 4, 5, 1, 2],
                 [4, 5, 1, 2, 3],
                 [5, 1, 2, 3, 4]])
-    print Q8.subgroups
-    print 'prueba de githunb'
+    print 'Q8.subgroups = ', Q8.subgroups
+    print 'C5.subgroups = ', C5.subgroups
+    print 'S3.subgroups = ', S3.subgroups
+
 
 
 
