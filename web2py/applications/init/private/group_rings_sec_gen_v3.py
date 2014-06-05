@@ -626,7 +626,7 @@ def main():
     print 'Q8.subgroups = ', Q8.subgroups
     print 'C5.subgroups = ', C5.subgroups
     print 'S3.subgroups = ', S3.subgroups
-    print 'Cambio de las 22:21 con SSH desde Macbookk Air'
+    print 'Cambio de las 22:22 con SSH desde Macbookk Air'
 
 
 
