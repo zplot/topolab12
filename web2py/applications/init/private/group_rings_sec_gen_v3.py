@@ -626,6 +626,7 @@ def main():
     print 'Q8.subgroups = ', Q8.subgroups
     print 'C5.subgroups = ', C5.subgroups
     print 'S3.subgroups = ', S3.subgroups
+    Cambio de las 21:06
 
 
 
