@@ -211,7 +211,7 @@ class Group(object):
                 list1.append(self.unit.name)
                 possible2.append(list1)
 
-        # Already know candidates for subgroups.They are in posible.
+        # Already know candidates for subgroups.They are in possible.
         # for each candidate we will see if h * g_inverse is in the candidate
         subgroups = []
         for set1 in possible2:
@@ -226,9 +226,29 @@ class Group(object):
             if is_subgroup:
                 subgroups.append(set1)
 
+        # Let's change element names by instances
+        subgroups2 = []
+        for s in subgroups:
+            a = [self.elements[e] for e in s]
+            subgroups2.append(a)
+
+        return subgroups2
+
+    def is_normal(self, H):
+        result = True
+        for h in H:
+            for g in self.elements:
+                gg = self.elements[g]
+                hh = self.elements[h]
+                tmp = gg * hh * gg.inv
+                if tmp.name in H:
+                    result = False
+        return result
 
 
-        return subgroups
+
+
+
 
 
 
@@ -626,8 +646,11 @@ def main():
     print 'Q8.subgroups = ', Q8.subgroups
     print 'C5.subgroups = ', C5.subgroups
     print 'S3.subgroups = ', S3.subgroups
-    print 'Cambio de las 22:22 con SSH desde Macbookk Air'
-
+    input()
+    print '************************** Subgrupos Normales ************'
+    print
+    candidato =  ['g5', 'g4', 'g1']
+    print S3.is_normal(candidato)
 
 
 
