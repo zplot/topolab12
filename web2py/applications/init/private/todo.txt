@@ -1,2 +1,5 @@
 Probar los subgrupos
 Terminar los subgrupos normales
+usar sets en lugar de listas y dicts
+unit tests de subgrupos
+unit tests de subgrupos normales

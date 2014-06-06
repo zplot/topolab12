@@ -225,13 +225,11 @@ class Group(object):
                         is_subgroup = False
             if is_subgroup:
                 subgroups.append(set1)
-
         # Let's change element names by instances
         subgroups2 = []
         for s in subgroups:
             a = [self.elements[e] for e in s]
             subgroups2.append(a)
-
         return subgroups2
 
     def is_normal(self, H):
@@ -241,7 +239,7 @@ class Group(object):
                 gg = self.elements[g]
                 hh = self.elements[h]
                 tmp = gg * hh * gg.inv
-                if tmp.name in H:
+                if tmp.name not in H:
                     result = False
         return result
 
@@ -646,10 +644,10 @@ def main():
     print 'Q8.subgroups = ', Q8.subgroups
     print 'C5.subgroups = ', C5.subgroups
     print 'S3.subgroups = ', S3.subgroups
-    input()
+
     print '************************** Subgrupos Normales ************'
     print
-    candidato =  ['g5', 'g4', 'g1']
+    candidato =  ['g5', 'g3', 'g1']
     print S3.is_normal(candidato)
 
 
