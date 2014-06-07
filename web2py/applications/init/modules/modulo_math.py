@@ -24,6 +24,10 @@ traza = logging.getLogger(__name__)
 class Set(object):
     # El conjunto sólo debe crearse si está bien formado
     def __init__(self, conjunto):
+        """
+
+
+        """
         self.theElements = conjunto
         self.index = 0
 
