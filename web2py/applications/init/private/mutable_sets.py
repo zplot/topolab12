@@ -1,4 +1,4 @@
-# groups.py
+# mutable_sets.py
 # -*- coding: utf-8 -*-
 
 
@@ -33,6 +33,22 @@ class Mset(object):
     def __iter__(self):
         self.i = 0
         return self
+
+
+    def __eq__(self, other):
+        if not isinstance(other, Mset):
+            return False
+        result = True
+        for e1 in self._elements:
+            if e1 not in other._elements:
+                result = False
+        for e1 in other._elements:
+            if e1 not in self._elements:
+                result = False
+        return result
+
+
+
     
     def next(self):
         if self.i < self.n:
@@ -58,13 +74,32 @@ class Mset(object):
 
 
 
-    def is_subset(self, other):
+    def issubset(self, other):
         if not isinstance(other, Mset):
             raise TypeError("One of the objects is not a Mset")
         for e in other:
             if e not in self:
                 return False
         return True
+
+    def issuperset(self, other):
+        if not isinstance(other, Mset):
+            raise TypeError("One of the objects is not a Mset")
+        for e in self:
+            if e not in other:
+                return False
+        return
+
+    def union(self, other):
+        tmp = list(set(self._elements) | set(other._elements))
+        result = Mset(tmp)
+        return result
+
+    def intersection(self, other):
+        tmp = list(set(self._elements) & set(other._elements))
+        result = Mset(tmp)
+        return result
+
 
 
 
@@ -104,7 +139,7 @@ for x in a:
 for x in a:
     print x
 
-print ' ******* Probamos is_element ****************'
+print ' ******* Probamos is element ****************'
 print
 print 1 in a
 print 'joe' in a
@@ -113,9 +148,36 @@ print c in d
 print b in d
 print a in d
 
-print ' ******* Probamos is_subset ****************'
+print ' ******* Probamos issubset ****************'
 print d
 print a
-print d.is_subset(a)
-print d.is_subset(e)
-print d.is_subset(Mset([a, 3]))
+print d.issubset(a)
+print d.issubset(e)
+print d.issubset(Mset([a, 3]))
+
+print ' ******* Probamos issuperset ****************'
+print d
+print e
+print e.issuperset(d)
+print d.issuperset(e)
+
+print ' ******* Probamos union ****************'
+print d
+print e
+print e.union(d)
+print d.union(e)
+print e.union(d) == e.union(d)
+f = Mset([1, 2])
+print f
+print f.union(e)
+
+print ' ******* Probamos intersección ****************'
+print c
+print d
+print c.intersection(d)
+print Mset([1, 2, 3, 4, 5]).intersection(Mset([4, 5, 6, 7]))
+g = Mset([1, 2, 3, 4, 5]).intersection(Mset([4, 5, 6, 7]))
+print g
+print isinstance(g, Mset)
+
+
