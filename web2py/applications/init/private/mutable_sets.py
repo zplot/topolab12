@@ -100,6 +100,17 @@ class Mset(object):
         result = Mset(tmp)
         return result
 
+    def difference(self, other):
+        tmp = list(set(self._elements) - set(other._elements))
+        result = Mset(tmp)
+        return result
+
+    def symmetric_difference(self, other):
+        tmp = list(set(self._elements) ^ set(other._elements))
+        result = Mset(tmp)
+        return result
+
+
 
 
 
@@ -179,5 +190,6 @@ print Mset([1, 2, 3, 4, 5]).intersection(Mset([4, 5, 6, 7]))
 g = Mset([1, 2, 3, 4, 5]).intersection(Mset([4, 5, 6, 7]))
 print g
 print isinstance(g, Mset)
-
+print g == Mset([4, 5])
+print g == Mset([4, 5, 4, 4, 5])
 
