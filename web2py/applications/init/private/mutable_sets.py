@@ -75,6 +75,7 @@ a = Mset([1, 2, 'joe', 2])
 b = Mset([1, 4, 3, 2, 7])
 c = Mset([a, b])
 d = Mset([a, c, 3, a, 7])
+e = Mset([a, c])
 
 print a
 print b
@@ -112,3 +113,9 @@ print c in d
 print b in d
 print a in d
 
+print ' ******* Probamos is_subset ****************'
+print d
+print a
+print d.is_subset(a)
+print d.is_subset(e)
+print d.is_subset(Mset([a, 3]))
