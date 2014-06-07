@@ -11,7 +11,14 @@ class Mset(object):
         self.elements = list(set(elements))
         self.i = 0
         self.n = len(list(set(elements)))
-        self.name = '{'
+        name = []
+        for x in self.elements:
+            if isinstance(x, Mset):
+                name.append(x.name)
+            else:
+                name.append(x)
+        self.name = name
+
 
     def __iter__(self):
         return self
@@ -25,7 +32,8 @@ class Mset(object):
             raise StopIteration()
 
     def __str__(self):
-        return self.name
+        return str(self.name)
+
 
         
 
@@ -48,13 +56,15 @@ class Mset(object):
 
 
 
-a = Mset([1, 2, 3, 2])
+a = Mset([1, 2, 'joe', 2])
 b = Mset([1, 4, 3, 2, 7])
 c = Mset([a, b])
 d = Mset([a, c, 3, a, 7])
 
-for x in d:
-    print x
+print a
+print b
+print c
+print d
 
 
 input()
