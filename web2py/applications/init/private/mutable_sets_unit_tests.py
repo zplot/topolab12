@@ -8,40 +8,28 @@ from mutable_sets import *
 
 
 
-class FindElementInListTestCase(unittest.TestCase):
-
-    def test_1(self):
-        self.assertTrue(find_element_in_list('a', [2, 3, 'a', 4]) == 2)
-
-    def test_1(self):
-        self.assertFalse(find_element_in_list('a', [2, 3, 'a', 4]) == 3)
-
-    def test_3(self):
-        self.assertEqual(find_element_in_list('a', [2, 3, 'a', 4]), 2)
-
-    def test_4(self):
-        self.assertEqual(find_element_in_list('b', [2, 3, 'a', 4]), -1)
-
-
-
-class GroupsTestCase(unittest.TestCase):
+class MsetsTestCase(unittest.TestCase):
 
 
     def test_1(self):
 
-        S3 = Group('S3', {'g1': 1, 'g2': 2, 'g3': 3, 'g4': 4, 'g5': 5, 'g6': 6},
-               [[1, 2, 3, 4, 5, 6],
-                [2, 1, 4, 3, 6, 5],
-                [3, 5, 1, 6, 2, 4],
-                [4, 6, 2, 5, 1, 3],
-                [5, 3, 6, 1, 4, 2],
-                [6, 4, 5, 2, 3, 1]])
+        a = Mset([1, 2, 3])
+        b = Mset([3, 4, a])
+        c = Mset([1, 4, a, b])
 
 
-        self.assertEqual(S3.g1 * S3.g2, S3.g2)
+        self.assertEqual(c, Mset([1, 4, [1, 2, 3], [3, 4, [1, 2, 3]]]))
 
 
 
+
+
+
+
+
+
+
+"""
     def test_2(self):
         Q8 = Group('Q8', {'one': 1, 'minus_1': 2, 'i': 3, 'minus_i': 4, 'j': 5, 'minus_j': 6, 'k': 7, 'minus_k': 8},
                    [[1, 2, 3, 4, 5, 6, 7, 8],
@@ -120,7 +108,7 @@ class GroupRingsTestCase(unittest.TestCase):
                                            S3.g4: -1776756, S3.g5: -1719132, S3.g6: -1680684})
 
         self.assertEqual(resultado, e1 * (e2 + 7) * (e1 - 3 * e2) * e3)
-
+"""
 
 
 

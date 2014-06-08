@@ -8,21 +8,30 @@ from random import randint
 
 class Mset(object):
     """
-    Mset models generalized sets. Msets are mutable
+    Mset class models finite mathematical sets.
+    msets are mutable and hashable.
+    You can have msets inside msets
+    You can have msets as keys in a dictionary
+    Example:
+    a = Mset([1,2,3])
+    b = Mset([3,4,a])
+    c = Mset([1,4,a,b])
+
     """
     def __init__(self, elements=[]):
         self._elements = list(set(elements))
-        self.i = 0
-
-
+        self._i = 0
 
     @property
     def len(self):
+        """
+        a.len
+        return cardinal of a
+        """
         return len(self._elements)
 
-
     @property
-    def n(self):
+    def _n(self):
         return len(self._elements)
 
     @property
@@ -35,11 +44,17 @@ class Mset(object):
                 name.append(x)
         return name
 
-
     def __iter__(self):
-        self.i = 0
+        self._i = 0
         return self
 
+    def next(self):
+        if self._i < self._n:
+            i = self._i
+            self._i += 1
+            return self._elements[i-1]
+        else:
+            raise StopIteration()
 
     def __eq__(self, other):
         if not isinstance(other, Mset):
@@ -53,36 +68,25 @@ class Mset(object):
                 result = False
         return result
 
-
-
-    
-    def next(self):
-        if self.i < self.n:
-            i = self.i
-            self.i += 1
-            return self._elements[i-1]
-        else:
-            raise StopIteration()
-
-    """
     def __str__(self):
-        return str(self.name)
+        tmp = 'Mset(['
+        for x in self:
+            tmp = tmp + x.__str__() + ', '
+        tmp = tmp[:-2]
+        tmp = tmp + '])'
+        return tmp
 
     def __repr__(self):
-        return str(self.name)
-    """
-
-    def __str__(self):
-        return 'Mset(' + str(self.name) + ')'
-
-    def __repr__(self):
-        return 'Mset(' + str(self.name) + ')'
-
+        tmp = 'Mset(['
+        for x in self:
+            tmp = tmp + x.__str__() + ', '
+        tmp = tmp[:-2]
+        tmp = tmp + '])'
+        return tmp
 
     @property
     def elements(self):
         return str(self)
-
 
     def issubset(self, other):
         """
@@ -125,7 +129,6 @@ class Mset(object):
         tmp = list(set(self._elements) & set(other._elements))
         result = Mset(tmp)
         return result
-
 
     def intersection_update(self, other):
         """
@@ -234,8 +237,6 @@ class Mset(object):
         """
         self._elements = []
         return
-
-
 
     def update(self, other):
         """
@@ -383,3 +384,14 @@ q1 = Mset([1, 2, 3, 4, 5, 6])
 q2 = Mset([5, 6, 7, 8, 9])
 q1.update(q2)
 print q1
+
+
+print ' ******* Pruebas finales ****************'
+print
+a = Mset([1, 2, 3])
+b = Mset([3, 4, a])
+c = Mset([1, 4, a, b])
+print a
+print b
+print c
+# Mset([1, 4, [1, 2, 3], [3, 4, [1, 2, 3]]])
