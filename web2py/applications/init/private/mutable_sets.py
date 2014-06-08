@@ -328,6 +328,7 @@ print g == Mset([4, 5, 4, 4, 5])
 print ' ******* Probamos difference ****************'
 print
 
+
 print ' ******* Probamos symmetric difference ****************'
 print
 
