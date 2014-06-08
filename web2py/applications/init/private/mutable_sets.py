@@ -15,6 +15,7 @@ class Mset(object):
         self.i = 0
 
 
+
     @property
     def len(self):
         return len(self._elements)
@@ -63,23 +64,31 @@ class Mset(object):
         else:
             raise StopIteration()
 
+    """
     def __str__(self):
         return str(self.name)
+
+    def __repr__(self):
+        return str(self.name)
+    """
+
+    def __str__(self):
+        return 'Mset(' + str(self.name) + ')'
+
+    def __repr__(self):
+        return 'Mset(' + str(self.name) + ')'
+
 
     @property
     def elements(self):
         return str(self)
 
-    def append(self, other):
-        self._elements.append(other)
-        self._elements = list (set(self._elements))
-        return
-
-
-
-
 
     def issubset(self, other):
+        """
+        s.issubset(t)
+        test whether every element in s is in t
+        """
         if not isinstance(other, Mset):
             raise TypeError("One of the objects is not a Mset")
         for e in other:
@@ -88,6 +97,10 @@ class Mset(object):
         return True
 
     def issuperset(self, other):
+        """
+        s.issuperset(t)
+        test whether every element in t is in s
+        """
         if not isinstance(other, Mset):
             raise TypeError("One of the objects is not a Mset")
         for e in self:
@@ -96,41 +109,106 @@ class Mset(object):
         return
 
     def union(self, other):
+        """
+        s.union(t)
+        new set with elements from both s and t
+        """
         tmp = list(set(self._elements) | set(other._elements))
         result = Mset(tmp)
         return result
 
     def intersection(self, other):
+        """
+        s.intersection(t)
+        new mset with elements common to s and
+        """
         tmp = list(set(self._elements) & set(other._elements))
         result = Mset(tmp)
         return result
 
+
+    def intersection_update(self, other):
+        """
+        s.intersection_update(t)
+        return mset s keeping only elements also found in t
+        """
+        tmp = list(set(self._elements) & set(other._elements))
+        self._elements = tmp
+        return
+
     def difference(self, other):
+        """
+        s.difference(t)
+        new set with elements in s but not in t
+        """
         tmp = list(set(self._elements) - set(other._elements))
         result = Mset(tmp)
         return result
 
+    def difference_update(self, other):
+        """
+        s.difference_update(t)
+        return mset s after removing elements found in t
+        """
+        tmp = list(set(self._elements) - set(other._elements))
+        self._elements = tmp
+        return
+
     def symmetric_difference(self, other):
+        """
+        s.symmetric_difference(t)
+        new set with elements in either s or t but not both
+        """
         tmp = list(set(self._elements) ^ set(other._elements))
         result = Mset(tmp)
         return result
 
-    def add(self, other):
-        tmp = list(set(self._elements))
-        tmp.append(other)
-        result = Mset(tmp)
+    @property
+    def copy(self):
+        """
+        s.copy
+        new set with a shallow copy of s
+        """
+        result = Mset(self._elements)
         return result
 
+    def symmetric_difference_update(self, other):
+        """
+        s.symmetric_difference_update(t)
+        return mset s with elements from s or t but not both
+        """
+        tmp = list(set(self._elements) ^ set(other._elements))
+        self._elements = tmp
+        return
+
+    def add(self, other):
+        """
+        s.add(x)
+        add element x to mset s
+        """
+        tmp = list(set(self._elements))
+        tmp.append(other)
+        self._elements = tmp
+        return
+
     def discard(self, other):
+        """
+        s.discard(x)
+        removes x from mset s if present
+        """
         tmp = list(set(self._elements))
         if other not in tmp:
             return self
         ind = tmp.index(other)
         tmp.remove(ind)
-        result = Mset(tmp)
-        return result
+        self._elements = tmp
+        return
 
     def remove(self, other):
+        """
+        s.remove(x)
+        remove x from mset s; raises KeyError if not present
+        """
         tmp = list(set(self._elements))
         if other not in tmp:
             raise KeyError("Element is not present")
@@ -150,7 +228,10 @@ class Mset(object):
 
     @property
     def clear(self):
-        tmp = []
+        """
+        s.clear
+        remove all elements from mset s
+        """
         self._elements = []
         return
 
@@ -158,7 +239,8 @@ class Mset(object):
 
     def update(self, other):
         """
-        Return self Mset with elements added from other
+        s.update(t)
+        return mset s with elements added from t
         """
         tmp1 = list(set(self._elements))
         tmp2 = list(set(other._elements))
@@ -190,14 +272,6 @@ print d.elements
 
 for x in d:
     print x
-
-print ' ******* Probamos append ****************'
-print
-a.append(11)
-a.append(11)
-a.append(11)
-a.append(11)
-print a
 
 print ' ******* Probamos iterator ****************'
 print
@@ -243,7 +317,7 @@ print ' ******* Probamos intersección ****************'
 print
 print c
 print d
-print c.intersection(d)
+print c.intersection_update(d)
 print Mset([1, 2, 3, 4, 5]).intersection(Mset([4, 5, 6, 7]))
 g = Mset([1, 2, 3, 4, 5]).intersection(Mset([4, 5, 6, 7]))
 print g
@@ -262,6 +336,14 @@ print
 
 print ' ******* Probamos discard ****************'
 print
+q1 = Mset([1, 2, 3, Mset(['a', 'b']), 4, 5, 6])
+print q1
+q1.discard(4)
+print q1
+q1.discard(9)
+print q1
+
+
 
 print ' ******* Probamos remove ****************'
 print
