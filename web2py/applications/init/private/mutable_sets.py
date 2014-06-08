@@ -3,7 +3,7 @@
 
 
 # from itertools import *
-
+from random import randint
 
 
 class Mset(object):
@@ -13,7 +13,12 @@ class Mset(object):
     def __init__(self, elements=[]):
         self._elements = list(set(elements))
         self.i = 0
-        # self.n = len(self._elements)
+
+
+    @property
+    def len(self):
+        return len(self._elements)
+
 
     @property
     def n(self):
@@ -110,6 +115,58 @@ class Mset(object):
         result = Mset(tmp)
         return result
 
+    def add(self, other):
+        tmp = list(set(self._elements))
+        tmp.append(other)
+        result = Mset(tmp)
+        return result
+
+    def discard(self, other):
+        tmp = list(set(self._elements))
+        if other not in tmp:
+            return self
+        ind = tmp.index(other)
+        tmp.remove(ind)
+        result = Mset(tmp)
+        return result
+
+    def remove(self, other):
+        tmp = list(set(self._elements))
+        if other not in tmp:
+            raise KeyError("Element is not present")
+        tmp.remove(other)
+        self._elements = tmp
+        return
+
+    @property
+    def pop(self):
+        tmp = list(set(self._elements))
+        if tmp == []:
+            raise KeyError("Mset is empty")
+        cual = randint(1, self.len)
+        quitado = tmp.pop(cual -1)
+        self._elements = tmp
+        return quitado
+
+    @property
+    def clear(self):
+        tmp = []
+        self._elements = []
+        return
+
+
+
+    def update(self, other):
+        """
+        Return self Mset with elements added from other
+        """
+        tmp1 = list(set(self._elements))
+        tmp2 = list(set(other._elements))
+        tmp3 = tmp1 + tmp2
+        self._elements = list(set(tmp3))
+        return
+
+
 
 
 
@@ -183,6 +240,7 @@ print f
 print f.union(e)
 
 print ' ******* Probamos intersección ****************'
+print
 print c
 print d
 print c.intersection(d)
@@ -193,3 +251,52 @@ print isinstance(g, Mset)
 print g == Mset([4, 5])
 print g == Mset([4, 5, 4, 4, 5])
 
+print ' ******* Probamos difference ****************'
+print
+
+print ' ******* Probamos symmetric difference ****************'
+print
+
+print ' ******* Probamos add ****************'
+print
+
+print ' ******* Probamos discard ****************'
+print
+
+print ' ******* Probamos remove ****************'
+print
+q1 = Mset([1, 2, 3, 4, 5, 6])
+print q1
+q1.remove(2)
+print q1
+
+print ' ******* Probamos pop ****************'
+print
+q1 = Mset([1, 2, 3, 4, 5, 6])
+aq = q1.pop
+print aq
+print q1
+q1.pop
+print q1
+q1.pop
+print q1
+
+q1.pop
+print q1
+
+q1.pop
+print q1
+
+
+print ' ******* Probamos clear ****************'
+print
+q1 = Mset([1, 2, 3, 4, 5, 6])
+q1.clear
+print q1
+
+print ' ******* Probamos update ****************'
+print
+q1 = Mset([1, 2, 3, 4, 5, 6])
+q2 = Mset([5, 6, 7, 8, 9])
+q1.update(q2)
+print q1
