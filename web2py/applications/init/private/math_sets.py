@@ -6,23 +6,22 @@
 from random import randint
 
 
-class Mset(object):
+class S(object):
     """
     Wikipedia: A mathematical set is a collection of distinct objects, considered as an object in its own right.
     For example, the numbers 2, 4, and 6 are distinct objects when considered separately, but
     when they are considered collectively they form a single set of size three.
 
-    Mset class models finite mathematical sets.
-    An element of a mset can be any python object.
-    msets are mutable and hashable.
-    msets can be elements of a mset. You can nest msets.
-    You can have msets as keys in a dictionary.
+    S class models finite mathematical sets.
+    An element of a S set can be any python object.
+    S sets are mutable and hashable.
+    S sets can be elements of a S set. You can nest S sets.
+    You can have S sets as keys in a dictionary.
 
     Example:
-    a = Mset([1,2,3])
-    b = Mset([3,4,a])
-    c = Mset([1,4,'Hello',a,b])
-
+    a = S([1,2,3])
+    b = S([3,4,a])
+    c = S([1,4,'Hello',a,b])
     """
     @staticmethod
     def list_set(elements):
@@ -66,7 +65,7 @@ class Mset(object):
             raise StopIteration()
 
     def __eq__(self, other):
-        if not isinstance(other, Mset):
+        if not isinstance(other, S):
             return False
         result = True
         for e1 in self._elements:
@@ -79,8 +78,8 @@ class Mset(object):
 
     def __str__(self):
         if self._elements == []:
-            return 'Mset([])'
-        tmp = 'Mset(['
+            return 'S([])'
+        tmp = 'S(['
         for x in self:
             tmp = tmp + x.__str__() + ', '
         tmp = tmp[:-2]
@@ -88,7 +87,7 @@ class Mset(object):
         return tmp
 
     def __repr__(self):
-        tmp = 'Mset(['
+        tmp = 'S(['
         for x in self:
             tmp = tmp + x.__str__() + ', '
         tmp = tmp[:-2]
@@ -104,8 +103,8 @@ class Mset(object):
         s.issubset(t)
         test whether every element in s is in t
         """
-        if not isinstance(other, Mset):
-            raise TypeError("One of the objects is not a Mset")
+        if not isinstance(other, S):
+            raise TypeError("One of the objects is not a S")
         for e in other:
             if e not in self:
                 return False
@@ -116,8 +115,8 @@ class Mset(object):
         s.issuperset(t)
         test whether every element in t is in s
         """
-        if not isinstance(other, Mset):
-            raise TypeError("One of the objects is not a Mset")
+        if not isinstance(other, S):
+            raise TypeError("One of the objects is not a S")
         for e in self:
             if e not in other:
                 return False
@@ -129,22 +128,22 @@ class Mset(object):
         new set with elements from both s and t
         """
         tmp = list(set(self._elements) | set(other._elements))
-        result = Mset(tmp)
+        result = S(tmp)
         return result
 
     def intersection(self, other):
         """
         s.intersection(t)
-        new mset with elements common to s and
+        new S set with elements common to s and
         """
         tmp = list(set(self._elements) & set(other._elements))
-        result = Mset(tmp)
+        result = S(tmp)
         return result
 
     def intersection_update(self, other):
         """
         s.intersection_update(t)
-        return mset s keeping only elements also found in t
+        return S set s keeping only elements also found in t
         """
         tmp = list(set(self._elements) & set(other._elements))
         self._elements = tmp
@@ -156,13 +155,13 @@ class Mset(object):
         new set with elements in s but not in t
         """
         tmp = list(set(self._elements) - set(other._elements))
-        result = Mset(tmp)
+        result = S(tmp)
         return result
 
     def difference_update(self, other):
         """
         s.difference_update(t)
-        return mset s after removing elements found in t
+        return S set s after removing elements found in t
         """
         tmp = list(set(self._elements) - set(other._elements))
         self._elements = tmp
@@ -174,7 +173,7 @@ class Mset(object):
         new set with elements in either s or t but not both
         """
         tmp = list(set(self._elements) ^ set(other._elements))
-        result = Mset(tmp)
+        result = S(tmp)
         return result
 
     @property
@@ -183,13 +182,13 @@ class Mset(object):
         s.copy
         new set with a shallow copy of s
         """
-        result = Mset(self._elements)
+        result = S(self._elements)
         return result
 
     def symmetric_difference_update(self, other):
         """
         s.symmetric_difference_update(t)
-        return mset s with elements from s or t but not both
+        return S set s with elements from s or t but not both
         """
         tmp = list(set(self._elements) ^ set(other._elements))
         self._elements = tmp
@@ -198,7 +197,7 @@ class Mset(object):
     def add(self, other):
         """
         s.add(x)
-        add element x to mset s
+        add element x to S set s
         """
         tmp = list(set(self._elements))
         tmp.append(other)
@@ -208,7 +207,7 @@ class Mset(object):
     def discard(self, other):
         """
         s.discard(x)
-        removes x from mset s if present
+        removes x from S set s if present
         """
         tmp = list(set(self._elements))
         if other not in tmp:
@@ -221,7 +220,7 @@ class Mset(object):
     def remove(self, other):
         """
         s.remove(x)
-        remove x from mset s; raises KeyError if not present
+        remove x from S set s; raises KeyError if not present
         """
         tmp = list(set(self._elements))
         if other not in tmp:
@@ -234,7 +233,7 @@ class Mset(object):
     def pop(self):
         tmp = list(set(self._elements))
         if tmp == []:
-            raise KeyError("Mset is empty")
+            raise KeyError("S is empty")
         cual = randint(1, self.len)
         quitado = tmp.pop(cual -1)
         self._elements = tmp
@@ -244,7 +243,7 @@ class Mset(object):
     def clear(self):
         """
         s.clear
-        remove all elements from mset s
+        remove all elements from S set s
         """
         self._elements = []
         return
@@ -252,7 +251,7 @@ class Mset(object):
     def update(self, other):
         """
         s.update(t)
-        return mset s with elements added from t
+        return S set s with elements added from t
         """
         tmp1 = list(set(self._elements))
         tmp2 = list(set(other._elements))
@@ -268,11 +267,11 @@ if __name__ == '__main__':
 
 
 
-    a = Mset([1, 2, 'joe', 2])
-    b = Mset([1, 4, 3, 2, 7])
-    c = Mset([a, b])
-    d = Mset([a, c, 3, a, 7])
-    e = Mset([a, c])
+    a = S([1, 2, 'joe', 2])
+    b = S([1, 4, 3, 2, 7])
+    c = S([a, b])
+    d = S([a, c, 3, a, 7])
+    e = S([a, c])
 
     print a
     print b
@@ -307,7 +306,7 @@ if __name__ == '__main__':
     print a
     print d.issubset(a)
     print d.issubset(e)
-    print d.issubset(Mset([a, 3]))
+    print d.issubset(S([a, 3]))
 
     print ' ******* Probamos issuperset ****************'
     print d
@@ -321,7 +320,7 @@ if __name__ == '__main__':
     print e.union(d)
     print d.union(e)
     print e.union(d) == e.union(d)
-    f = Mset([1, 2])
+    f = S([1, 2])
     print f
     print f.union(e)
 
@@ -330,12 +329,12 @@ if __name__ == '__main__':
     print c
     print d
     print c.intersection_update(d)
-    print Mset([1, 2, 3, 4, 5]).intersection(Mset([4, 5, 6, 7]))
-    g = Mset([1, 2, 3, 4, 5]).intersection(Mset([4, 5, 6, 7]))
+    print S([1, 2, 3, 4, 5]).intersection(S([4, 5, 6, 7]))
+    g = S([1, 2, 3, 4, 5]).intersection(S([4, 5, 6, 7]))
     print g
-    print isinstance(g, Mset)
-    print g == Mset([4, 5])
-    print g == Mset([4, 5, 4, 4, 5])
+    print isinstance(g, S)
+    print g == S([4, 5])
+    print g == S([4, 5, 4, 4, 5])
 
     print ' ******* Probamos difference ****************'
     print
@@ -349,7 +348,7 @@ if __name__ == '__main__':
 
     print ' ******* Probamos discard ****************'
     print
-    q1 = Mset([1, 2, 3, Mset(['a', 'b']), 4, 5, 6])
+    q1 = S([1, 2, 3, S(['a', 'b']), 4, 5, 6])
     print q1
     q1.discard(4)
     print q1
@@ -360,14 +359,14 @@ if __name__ == '__main__':
 
     print ' ******* Probamos remove ****************'
     print
-    q1 = Mset([1, 2, 3, 4, 5, 6])
+    q1 = S([1, 2, 3, 4, 5, 6])
     print q1
     q1.remove(2)
     print q1
 
     print ' ******* Probamos pop ****************'
     print
-    q1 = Mset([1, 2, 3, 4, 5, 6])
+    q1 = S([1, 2, 3, 4, 5, 6])
     aq = q1.pop
     print aq
     print q1
@@ -385,32 +384,32 @@ if __name__ == '__main__':
 
     print ' ******* Probamos clear ****************'
     print
-    q1 = Mset([1, 2, 3, 4, 5, 6])
+    q1 = S([1, 2, 3, 4, 5, 6])
     q1.clear
     print q1
 
     print ' ******* Probamos update ****************'
     print
-    q1 = Mset([1, 2, 3, 4, 5, 6])
-    q2 = Mset([5, 6, 7, 8, 9])
+    q1 = S([1, 2, 3, 4, 5, 6])
+    q2 = S([5, 6, 7, 8, 9])
     q1.update(q2)
     print q1
 
 
     print ' ******* Pruebas finales ****************'
     print
-    a = Mset([])
-    b = Mset([3, 4, a])
-    c = Mset([1, 4, a, b])
+    a = S([])
+    b = S([3, 4, a])
+    c = S([1, 4, a, b])
     print a
     print b
     print 'c = ', c
-    d = Mset([1, [2, 3]])
+    d = S([1, [2, 3]])
     print d
-    a = Mset([1, [2, 3, [4, 5, 6]]])
+    a = S([1, [2, 3, [4, 5, 6]]])
     print a
-    a = Mset([1, [2, 'this is a string', [4, 5, 6]]])
-    b = Mset([['this is a string', 2, [4, 5, 6]], 1])
+    a = S([1, [2, 'this is a string', [4, 5, 6]]])
+    b = S([['this is a string', 2, [4, 5, 6]], 1])
     print a == b
     print '++++++++++++++++++++++++'
     for x in a:
@@ -419,5 +418,5 @@ if __name__ == '__main__':
     for x in b:
         print x
 
-    a = Mset([1, [2, 'this is a string', [4, 5, 6]]])
+    a = S([1, [2, 'this is a string', [4, 5, 6]]])
     print a

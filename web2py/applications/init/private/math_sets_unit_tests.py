@@ -8,59 +8,59 @@ from math_sets import *
 
 
 
-class MsetsTestCase(unittest.TestCase):
+class SsTestCase(unittest.TestCase):
 
 
-    def test_nested_msets_1(self):
+    def test_nested_sets_1(self):
 
-        a = Mset([1, 2, 3])
-        b = Mset([3, 4, a])
-        c = Mset([1, 4, a, b])
+        a = S([1, 2, 3])
+        b = S([3, 4, a])
+        c = S([1, 4, a, b])
 
-        self.assertEqual(c, Mset([Mset([3, 1, 2]), 1, 4, Mset([4, Mset([3, 1, 2]), 3])]))
+        self.assertEqual(c, S([S([3, 1, 2]), 1, 4, S([4, S([3, 1, 2]), 3])]))
 
-    def test_nested_msets_2(self):
+    def test_nested_sets_2(self):
 
-        a = Mset([])
-        b = Mset([3, 4, a])
-        c = Mset([1, 4, a, b])
+        a = S([])
+        b = S([3, 4, a])
+        c = S([1, 4, a, b])
 
-        self.assertEqual(c, Mset([Mset([Mset([]), 4, 3]), 1, 4, Mset([])]))
+        self.assertEqual(c, S([S([S([]), 4, 3]), 1, 4, S([])]))
 
     def test_order_does_not_matter_1(self):
 
-        a = Mset([1, [2, 3, [4, 5, 6]]])
+        a = S([1, [2, 3, [4, 5, 6]]])
 
-        self.assertEqual(a, Mset([[2, 3, [4, 5, 6]], 1]))
+        self.assertEqual(a, S([[2, 3, [4, 5, 6]], 1]))
 
     def test_order_does_not_matter_2(self):
 
-        a = Mset([1, [2, 'this is a string', [4, 5, 6]]])
+        a = S([1, [2, 'this is a string', [4, 5, 6]]])
 
-        self.assertEqual(a, Mset([[2, 'this is a string', [4, 5, 6]], 1]))
+        self.assertEqual(a, S([[2, 'this is a string', [4, 5, 6]], 1]))
 
     def test_order_does_not_matter_3(self):
 
-        a = Mset([1, 2, 3, 4, 5])
-        b = Mset([1, 3, 5, 4, 2])
+        a = S([1, 2, 3, 4, 5])
+        b = S([1, 3, 5, 4, 2])
 
         self.assertEqual(a, b)
 
     def test_cardinal_1(self):
 
-        a = Mset([1, [2, 3, [4, 5, 6]]])
+        a = S([1, [2, 3, [4, 5, 6]]])
 
         self.assertEqual(a.len, 2)
 
     def test_cardinal_2(self):
 
-        a = Mset([1, 3, '4', 9, '4', 3, 1, Mset([])])
+        a = S([1, 3, '4', 9, '4', 3, 1, S([])])
 
         self.assertEqual(a.len, 5)
 
     def test_cardinal_3(self):
 
-        a = Mset([])
+        a = S([])
 
         self.assertEqual(a.len, 0)
 
