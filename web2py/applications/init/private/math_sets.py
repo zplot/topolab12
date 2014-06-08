@@ -94,9 +94,6 @@ class S(object):
         tmp = tmp + '])'
         return tmp
 
-    @property
-    def elements(self):
-        return str(self)
 
     def issubset(self, other):
         """
@@ -278,7 +275,7 @@ if __name__ == '__main__':
     print c
     print d
     print d
-    print d.elements
+
 
 
     for x in d:
@@ -420,3 +417,6 @@ if __name__ == '__main__':
 
     a = S([1, [2, 'this is a string', [4, 5, 6]]])
     print a
+
+
+

@@ -64,7 +64,28 @@ class SsTestCase(unittest.TestCase):
 
         self.assertEqual(a.len, 0)
 
+    def test_iterator_1(self):
 
+        a = S([1, 2, 3, 4, 5, 6, 7])
+        b = S([])
+        for x in a:
+            b.add(x)
+
+        self.assertEqual(a, b)
+
+    def test_eq_1(self):
+
+        a = S([1, 2, 3, 4, 5, 6, 7])
+        b = S([5, 3, 1, 2, 4, 7, 6])
+
+        self.assertEqual(a, b)
+
+    def test_issubset_1(self):
+
+        a = S([1, 2, 3, 4, 5, 6, 7])
+        b = S([2,4,6])
+
+        self.assertTrue(a.issubset(b))
 
 
 
