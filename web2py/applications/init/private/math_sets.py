@@ -414,3 +414,17 @@ if __name__ == '__main__':
     print 'c = ', c
     d = Mset([1, [2, 3]])
     print d
+    a = Mset([1, [2, 3, [4, 5, 6]]])
+    print a
+    a = Mset([1, [2, 'this is a string', [4, 5, 6]]])
+    b = Mset([['this is a string', 2, [4, 5, 6]], 1])
+    print a == b
+    print '++++++++++++++++++++++++'
+    for x in a:
+        print x
+    print '================'
+    for x in b:
+        print x
+
+    a = Mset([1, [2, 'this is a string', [4, 5, 6]]])
+    print a
