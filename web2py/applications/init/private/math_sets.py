@@ -24,9 +24,11 @@ class Mset(object):
     c = Mset([1,4,'Hello',a,b])
 
     """
-
     @staticmethod
     def list_set(elements):
+        """
+        Receives a list and returns the list without duplicated elements
+        """
         result = []
         for x in elements:
             if x not in result:
@@ -50,15 +52,6 @@ class Mset(object):
     def _n(self):
         return len(self._elements)
 
-    @property
-    def name(self):
-        name = []
-        for x in self._elements:
-            if isinstance(x, Mset):
-                name.append(x.name)
-            else:
-                name.append(x)
-        return name
 
     def __iter__(self):
         self._i = 0
