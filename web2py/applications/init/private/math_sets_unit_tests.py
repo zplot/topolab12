@@ -1,7 +1,7 @@
 __author__ = 'LuisFontes'
 
 import unittest
-from mutable_sets import *
+from math_sets import *
 
 
 
@@ -17,7 +17,6 @@ class MsetsTestCase(unittest.TestCase):
         b = Mset([3, 4, a])
         c = Mset([1, 4, a, b])
 
-
         self.assertEqual(c, Mset([Mset([3, 1, 2]), 1, 4, Mset([4, Mset([3, 1, 2]), 3])]))
 
     def test_2(self):
@@ -26,8 +25,7 @@ class MsetsTestCase(unittest.TestCase):
         b = Mset([3, 4, a])
         c = Mset([1, 4, a, b])
 
-
-        self.assertEqual(c, Mset([Mset([Mset([]), 3, 4]), 1, 4, Mset([])]))
+        self.assertEqual(c, Mset([Mset([Mset([]), 4, 3]), 1, 4, Mset([])]))
 
 
 
