@@ -6,7 +6,7 @@
 from random import randint
 
 
-class S(object):
+class Sit(object):
     """
     Wikipedia: A mathematical set is a collection of distinct objects, considered as an object in its own right.
     For example, the numbers 2, 4, and 6 are distinct objects when considered separately, but
@@ -65,7 +65,7 @@ class S(object):
             raise StopIteration()
 
     def __eq__(self, other):
-        if not isinstance(other, S):
+        if not isinstance(other, Sit):
             return False
         result = True
         for e1 in self._elements:
@@ -78,8 +78,8 @@ class S(object):
 
     def __str__(self):
         if self._elements == []:
-            return 'S([])'
-        tmp = 'S(['
+            return 'Sit([])'
+        tmp = 'Sit(['
         for x in self:
             tmp = tmp + x.__str__() + ', '
         tmp = tmp[:-2]
@@ -87,7 +87,7 @@ class S(object):
         return tmp
 
     def __repr__(self):
-        tmp = 'S(['
+        tmp = 'Sit(['
         for x in self:
             tmp = tmp + x.__str__() + ', '
         tmp = tmp[:-2]
@@ -100,7 +100,7 @@ class S(object):
         s.issubset(t)
         test whether every element in s is in t
         """
-        if not isinstance(other, S):
+        if not isinstance(other, Sit):
             raise TypeError("One of the objects is not a S")
         for e in other:
             if e not in self:
@@ -112,7 +112,7 @@ class S(object):
         s.issuperset(t)
         test whether every element in t is in s
         """
-        if not isinstance(other, S):
+        if not isinstance(other, Sit):
             raise TypeError("One of the objects is not a S")
         for e in self:
             if e not in other:
@@ -125,7 +125,7 @@ class S(object):
         new set with elements from both s and t
         """
         tmp = list(set(self._elements) | set(other._elements))
-        result = S(tmp)
+        result = Sit(tmp)
         return result
 
     def intersection(self, other):
@@ -134,7 +134,7 @@ class S(object):
         new S set with elements common to s and
         """
         tmp = list(set(self._elements) & set(other._elements))
-        result = S(tmp)
+        result = Sit(tmp)
         return result
 
     def intersection_update(self, other):
@@ -152,7 +152,7 @@ class S(object):
         new set with elements in s but not in t
         """
         tmp = list(set(self._elements) - set(other._elements))
-        result = S(tmp)
+        result = Sit(tmp)
         return result
 
     def difference_update(self, other):
@@ -170,7 +170,7 @@ class S(object):
         new set with elements in either s or t but not both
         """
         tmp = list(set(self._elements) ^ set(other._elements))
-        result = S(tmp)
+        result = Sit(tmp)
         return result
 
     @property
@@ -179,7 +179,7 @@ class S(object):
         s.copy
         new set with a shallow copy of s
         """
-        result = S(self._elements)
+        result = Sit(self._elements)
         return result
 
     def symmetric_difference_update(self, other):
@@ -230,7 +230,7 @@ class S(object):
     def pop(self):
         tmp = list(set(self._elements))
         if tmp == []:
-            raise KeyError("S is empty")
+            raise KeyError("Sit is empty")
         cual = randint(1, self.len)
         quitado = tmp.pop(cual -1)
         self._elements = tmp
@@ -264,11 +264,11 @@ if __name__ == '__main__':
 
 
 
-    a = S([1, 2, 'joe', 2])
-    b = S([1, 4, 3, 2, 7])
-    c = S([a, b])
-    d = S([a, c, 3, a, 7])
-    e = S([a, c])
+    a = Sit([1, 2, 'joe', 2])
+    b = Sit([1, 4, 3, 2, 7])
+    c = Sit([a, b])
+    d = Sit([a, c, 3, a, 7])
+    e = Sit([a, c])
 
     print a
     print b
@@ -303,7 +303,7 @@ if __name__ == '__main__':
     print a
     print d.issubset(a)
     print d.issubset(e)
-    print d.issubset(S([a, 3]))
+    print d.issubset(Sit([a, 3]))
 
     print ' ******* Probamos issuperset ****************'
     print d
@@ -317,7 +317,7 @@ if __name__ == '__main__':
     print e.union(d)
     print d.union(e)
     print e.union(d) == e.union(d)
-    f = S([1, 2])
+    f = Sit([1, 2])
     print f
     print f.union(e)
 
@@ -326,12 +326,12 @@ if __name__ == '__main__':
     print c
     print d
     print c.intersection_update(d)
-    print S([1, 2, 3, 4, 5]).intersection(S([4, 5, 6, 7]))
-    g = S([1, 2, 3, 4, 5]).intersection(S([4, 5, 6, 7]))
+    print Sit([1, 2, 3, 4, 5]).intersection(Sit([4, 5, 6, 7]))
+    g = Sit([1, 2, 3, 4, 5]).intersection(Sit([4, 5, 6, 7]))
     print g
-    print isinstance(g, S)
-    print g == S([4, 5])
-    print g == S([4, 5, 4, 4, 5])
+    print isinstance(g, Sit)
+    print g == Sit([4, 5])
+    print g == Sit([4, 5, 4, 4, 5])
 
     print ' ******* Probamos difference ****************'
     print
@@ -345,7 +345,7 @@ if __name__ == '__main__':
 
     print ' ******* Probamos discard ****************'
     print
-    q1 = S([1, 2, 3, S(['a', 'b']), 4, 5, 6])
+    q1 = Sit([1, 2, 3, Sit(['a', 'b']), 4, 5, 6])
     print q1
     q1.discard(4)
     print q1
@@ -356,14 +356,14 @@ if __name__ == '__main__':
 
     print ' ******* Probamos remove ****************'
     print
-    q1 = S([1, 2, 3, 4, 5, 6])
+    q1 = Sit([1, 2, 3, 4, 5, 6])
     print q1
     q1.remove(2)
     print q1
 
     print ' ******* Probamos pop ****************'
     print
-    q1 = S([1, 2, 3, 4, 5, 6])
+    q1 = Sit([1, 2, 3, 4, 5, 6])
     aq = q1.pop
     print aq
     print q1
@@ -381,32 +381,32 @@ if __name__ == '__main__':
 
     print ' ******* Probamos clear ****************'
     print
-    q1 = S([1, 2, 3, 4, 5, 6])
+    q1 = Sit([1, 2, 3, 4, 5, 6])
     q1.clear
     print q1
 
     print ' ******* Probamos update ****************'
     print
-    q1 = S([1, 2, 3, 4, 5, 6])
-    q2 = S([5, 6, 7, 8, 9])
+    q1 = Sit([1, 2, 3, 4, 5, 6])
+    q2 = Sit([5, 6, 7, 8, 9])
     q1.update(q2)
     print q1
 
 
     print ' ******* Pruebas finales ****************'
     print
-    a = S([])
-    b = S([3, 4, a])
-    c = S([1, 4, a, b])
+    a = Sit([])
+    b = Sit([3, 4, a])
+    c = Sit([1, 4, a, b])
     print a
     print b
     print 'c = ', c
-    d = S([1, [2, 3]])
+    d = Sit([1, [2, 3]])
     print d
-    a = S([1, [2, 3, [4, 5, 6]]])
+    a = Sit([1, [2, 3, [4, 5, 6]]])
     print a
-    a = S([1, [2, 'this is a string', [4, 5, 6]]])
-    b = S([['this is a string', 2, [4, 5, 6]], 1])
+    a = Sit([1, [2, 'this is a string', [4, 5, 6]]])
+    b = Sit([['this is a string', 2, [4, 5, 6]], 1])
     print a == b
     print '++++++++++++++++++++++++'
     for x in a:
@@ -415,7 +415,7 @@ if __name__ == '__main__':
     for x in b:
         print x
 
-    a = S([1, [2, 'this is a string', [4, 5, 6]]])
+    a = Sit([1, [2, 'this is a string', [4, 5, 6]]])
     print a
 
 
