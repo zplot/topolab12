@@ -234,6 +234,10 @@ class Group(object):
             subgroups2.append(a)
         return subgroups2
 
+
+
+
+
     def is_normal(self, H):
         result = True
         for h in H:
