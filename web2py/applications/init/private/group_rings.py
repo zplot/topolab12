@@ -87,6 +87,8 @@ class Group(object):
             print
 
 
+    def __str__(self):
+        return self.name
 
     @property
     def is_abelian(self):
@@ -644,11 +646,14 @@ def main():
     print 'Q8.subgroups = ', Q8.subgroups
     print 'C5.subgroups = ', C5.subgroups
     print 'S3.subgroups = ', S3.subgroups
+    for subgroup in S3.subgroups:
+        print 'Subgroup = ', subgroup
 
     print '************************** Subgrupos Normales ************'
     print
     candidato =  ['g5', 'g3', 'g1']
     print S3.is_normal(candidato)
+    print S3
 
 
 

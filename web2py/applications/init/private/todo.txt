@@ -3,3 +3,6 @@ Terminar los subgrupos normales
 usar sets en lugar de listas y dicts
 unit tests de subgrupos
 unit tests de subgrupos normales
+
+Hacer __str__ para grupos
+Se puede hacer que un subgrupo sea una instancia de la clase Group?
