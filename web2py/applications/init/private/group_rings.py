@@ -50,11 +50,6 @@ def submatrix(elements, matrix):
     return submat
 
 
-
-
-
-
-
 def find_element_in_list(element, list1):
     """
     Finds an element in a list and returns its position
@@ -281,9 +276,6 @@ class Group(object):
         return subgroups3_sit
 
 
-
-
-
     def is_normal(self, H):
         result = True
         for h in H:
@@ -294,22 +286,6 @@ class Group(object):
                 if tmp.name not in H:
                     result = False
         return result
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 class GroupElement(object):
@@ -357,6 +333,7 @@ class GroupRingElement(object):
     def __init__(self, group_ring, coordinates):
         self.coordinates = coordinates
         self.group_ring = group_ring
+        self._conj = None
 
 
         unordered = self.coordinates
@@ -373,6 +350,21 @@ class GroupRingElement(object):
                             ', '
         result = tmp + str_coord[:-2] + '})'
         self.name = result
+
+
+    @property
+    def conj(self):
+        """
+        Calculation of the conjugate element
+        """
+
+        if self._conj is not None:
+            return self._conj
+
+
+        return self._conj
+
+
 
 
 
@@ -480,12 +472,6 @@ class GroupRingElement(object):
         return self * other
 
 
-
-
-
-
-
-
     def __eq__(self, other):
 
         result = self.name == other.name
@@ -502,9 +488,6 @@ class GroupRingElement(object):
         Nice formating for printing GroupRingElements
         """
         return self.name
-
-
-
 
 
 class GroupRing(object):

@@ -1,7 +1,7 @@
 __author__ = 'LuisFontes'
 
 import unittest
-from group_rings_sec_gen_v3 import *
+from group_rings import *
 
 
 
