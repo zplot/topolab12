@@ -32,22 +32,22 @@ def submatrix(elements, matrix):
     :return: new matrix
     """
     # size = len(matrix[0])
-    submatrix = deepcopy(matrix)
+    submat = deepcopy(matrix)
     todos_sit = Sit(matrix[0])
     elementos_validos_sit = Sit(elements)
     elementos_a_borrar = todos_sit.difference(elementos_validos_sit)
-    # Borramos las filas de submatrix que no valen
+    # Borramos las filas de submat que no valen
     for row_number in range(len(matrix)):
         if matrix[row_number][0] in elementos_a_borrar:
-            submatrix.remove(matrix[row_number])
-    # Borramos las columas de submatrix que no valen
+            submat.remove(matrix[row_number])
+    # Borramos las columas de submat que no valen
     num_filas = elementos_validos_sit.len
     num_columnas = len(matrix[0])
     for col_number in range(num_columnas):
         if matrix[0][col_number] in elementos_a_borrar:
             for fila in range(num_filas):
-                submatrix[fila].remove(matrix[0][col_number])
-    return submatrix
+                submat[fila].remove(matrix[0][col_number])
+    return submat
 
 
 
