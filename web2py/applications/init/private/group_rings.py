@@ -4,7 +4,7 @@
 from __future__ import division
 # from sympy.ntheory import factorint
 import itertools
-
+from math_sets import *
 
 
 # Para logging en este módulo. Descomentar filename para hacer logging al fichero
@@ -38,7 +38,7 @@ def find_element_in_list(element, list1):
         return -1
 
 
-class Group(object):
+class Group(Sit):
     """
     Finite groups class.
     Example:
@@ -232,6 +232,19 @@ class Group(object):
         for s in subgroups:
             a = [self.elements[e] for e in s]
             subgroups2.append(a)
+        for subgroup in subgroups2:
+            subgroups3 = Sit()  # The subgroups form a sit
+            # We have to prepare the elements and table of the subgroup
+            # Preparation of elements
+            elements = {}
+            for e in subgroup:
+                elements[e.name: self.elements[e.name]]
+            # Preparation of table
+            table = submatrix(subgroup, self.table) # Tenemos que construir esta función
+
+
+
+
         return subgroups2
 
 
