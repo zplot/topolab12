@@ -4,6 +4,7 @@
 
 # from itertools import *
 from random import randint
+from copy import deepcopy as deepcopy
 
 
 class Sit(object):
@@ -19,9 +20,9 @@ class Sit(object):
     You can have S sets as keys in a dictionary.
 
     Example:
-    a = S([1,2,3])
-    b = S([3,4,a])
-    c = S([1,4,'Hello',a,b])
+    a = Sit([1,2,3])
+    b = Sit([3,4,a])
+    c = Sit([1,4,'Hello',a,b])
     """
     @staticmethod
     def list_set(elements):
@@ -32,12 +33,17 @@ class Sit(object):
         for x in elements:
             if x not in result:
                 result.append(x)
-        return result
+        tmp = deepcopy(result)
+        return tmp
 
 
     def __init__(self, elements=[]):
-        self._elements = self.list_set(elements)
+        tmp = self.list_set(elements)
+        self._elements = tmp
         self._i = 0
+
+    def get_elements(self):
+        return self._elements
 
     @property
     def len(self):
@@ -87,6 +93,8 @@ class Sit(object):
         return tmp
 
     def __repr__(self):
+        if self._elements == []:
+            return 'Sit([])'
         tmp = 'Sit(['
         for x in self:
             tmp = tmp + x.__str__() + ', '
@@ -173,14 +181,6 @@ class Sit(object):
         result = Sit(tmp)
         return result
 
-    @property
-    def copy(self):
-        """
-        s.copy
-        new set with a shallow copy of s
-        """
-        result = Sit(self._elements)
-        return result
 
     def symmetric_difference_update(self, other):
         """
@@ -416,7 +416,7 @@ if __name__ == '__main__':
         print x
 
     a = Sit([1, [2, 'this is a string', [4, 5, 6]]])
-    print a
+    print a.get_elements()
 
 
 

@@ -5,6 +5,7 @@ from __future__ import division
 # from sympy.ntheory import factorint
 import itertools
 from math_sets import *
+from copy import deepcopy as deepcopy
 
 
 # Para logging en este módulo. Descomentar filename para hacer logging al fichero
@@ -19,6 +20,34 @@ logging.basicConfig(
 )
 
 traza = logging.getLogger(__name__)
+
+
+
+def submatrix(elements, matrix):
+    """
+    Returns the restricted submatrix for selected elements
+    matrix is square
+    :param elements: list
+    :param matrix: matrix (nested list)
+    :return: new matrix
+    """
+    # size = len(matrix[0])
+    submatrix = deepcopy(matrix)
+    todos_sit = Sit(matrix[0])
+    elementos_validos_sit = Sit(elements)
+    elementos_a_borrar = todos_sit.difference(elementos_validos_sit)
+    # Borramos las filas de submatrix que no valen
+    for row_number in range(len(matrix)):
+        if matrix[row_number][0] in elementos_a_borrar:
+            submatrix.remove(matrix[row_number])
+    # Borramos las columas de submatrix que no valen
+    num_filas = elementos_validos_sit.len
+    num_columnas = len(matrix[0])
+    for col_number in range(num_columnas):
+        if matrix[0][col_number] in elementos_a_borrar:
+            for fila in range(num_filas):
+                submatrix[fila].remove(matrix[0][col_number])
+    return submatrix
 
 
 
@@ -38,7 +67,7 @@ def find_element_in_list(element, list1):
         return -1
 
 
-class Group(Sit):
+class Group(object):
     """
     Finite groups class.
     Example:
@@ -232,20 +261,24 @@ class Group(Sit):
         for s in subgroups:
             a = [self.elements[e] for e in s]
             subgroups2.append(a)
-        for subgroup in subgroups2:
-            subgroups3 = Sit()  # The subgroups form a sit
+        num_subgroup = 0
+        subgroups3 = []
+        for subgroup in subgroups:
+            num_subgroup = num_subgroup + 1
+
             # We have to prepare the elements and table of the subgroup
             # Preparation of elements
             elements = {}
+            elementos_del_subgrupo = []
             for e in subgroup:
-                elements[e.name: self.elements[e.name]]
+                elements[e] = self.element_names[e]
+                elementos_del_subgrupo.append(self.element_names[e])
             # Preparation of table
-            table = submatrix(subgroup, self.table) # Tenemos que construir esta función
-
-
-
-
-        return subgroups2
+            table = submatrix(elementos_del_subgrupo, self.table)  # Tenemos que construir esta función
+            name = self.name + '-sub-' + str(num_subgroup)
+            subgroups3.append(Group(name, elements, table))
+        subgroups3_sit = Sit(subgroups3)
+        return subgroups3_sit
 
 
 
@@ -490,6 +523,7 @@ class GroupRing(object):
 
 def main():
 
+
     # global S3
     S3 = Group('S3', {'g1': 1, 'g2': 2, 'g3': 3, 'g4': 4, 'g5': 5, 'g6': 6},
                [[1, 2, 3, 4, 5, 6],
@@ -671,6 +705,7 @@ def main():
     candidato =  ['g5', 'g3', 'g1']
     print S3.is_normal(candidato)
     print S3
+
 
 
 
