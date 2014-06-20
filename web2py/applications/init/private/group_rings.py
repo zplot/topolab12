@@ -506,7 +506,7 @@ class GroupRing(object):
 
 def main():
 
-
+   
     # global S3
     S3 = Group('S3', {'g1': 1, 'g2': 2, 'g3': 3, 'g4': 4, 'g5': 5, 'g6': 6},
                [[1, 2, 3, 4, 5, 6],
@@ -688,7 +688,6 @@ def main():
     candidato =  ['g5', 'g3', 'g1']
     print S3.is_normal(candidato)
     print S3
-
 
 
 
