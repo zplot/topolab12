@@ -99,6 +99,7 @@ class Group(object):
         self._is_abelian = None
         self._order = None
         self._unit = None
+        self._center = None
 
 
         if self.is_group:
@@ -217,8 +218,12 @@ class Group(object):
 
     @property
     def subgroups(self):
-        group_order_divisors = []
-        orden = self.order
+        """
+        Takes a Group and returns the sit of its subgroups. Each element of this sit is a group instance
+        :return: A sit of groups
+        """
+        group_order_divisors = []  # Vamos a ir metiendo los divisores del orden del grupo
+        orden = self.order  # Orden del grupo
         for x in range(2, orden // 2 + 1):
             if orden / x == orden // x:
                 group_order_divisors.append(x)
@@ -227,7 +232,7 @@ class Group(object):
         for e1 in self.elements:
             if e1 != self.unit.name:
                 elements_without_unit.append(e1)
-        possible = []
+        possible = []  # Candidatos a subgrupo
         for n in group_order_divisors:
             possible.append(list(itertools.combinations(elements_without_unit, n - 1)))  # tmp1 es una lista de tuplas
         possible2 = []
@@ -237,9 +242,10 @@ class Group(object):
                 list1.append(self.unit.name)
                 possible2.append(list1)
 
-        # Already know candidates for subgroups.They are in possible.
+        # Already know candidates for subgroups.They are in possible2.
         # for each candidate we will see if h * g_inverse is in the candidate
-        subgroups = []
+        subgroups = []  # subgroups es una lista de listas. Cada una de las listas contiene los nombres de los
+                        # elementos de cada subgrupo
         for set1 in possible2:
             is_subgroup = True
             for g1_name in set1:
@@ -252,12 +258,16 @@ class Group(object):
             if is_subgroup:
                 subgroups.append(set1)
         # Let's change element names by instances
-        subgroups2 = []
+        subgroups2 = []  # subgroups 2 es una lista de listas, semejante a subgroups. Cada lista contiene los
+                         # elementos del subgrupo. No los nombres de los elementos sino los elementos. Es decir,
+                         # instancias de GroupElement
         for s in subgroups:
             a = [self.elements[e] for e in s]
             subgroups2.append(a)
         num_subgroup = 0
-        subgroups3 = []
+        subgroups3 = []  # subgroups3 va a contener la lista de subgrupos semejante a subgroups2 pero ahora cada
+                         # elemento de subgroups3 es una instancia de la case Group. A cada subgrupo se le pone
+                         # un nombre
         for subgroup in subgroups:
             num_subgroup = num_subgroup + 1
 
@@ -269,10 +279,10 @@ class Group(object):
                 elements[e] = self.element_names[e]
                 elementos_del_subgrupo.append(self.element_names[e])
             # Preparation of table
-            table = submatrix(elementos_del_subgrupo, self.table)  # Tenemos que construir esta función
+            table = submatrix(elementos_del_subgrupo, self.table)
             name = self.name + '-sub-' + str(num_subgroup)
             subgroups3.append(Group(name, elements, table))
-        subgroups3_sit = Sit(subgroups3)
+        subgroups3_sit = Sit(subgroups3)  # subgroups3_sit es el sit de los subgrupos
         return subgroups3_sit
 
 
@@ -286,6 +296,55 @@ class Group(object):
                 if tmp.name not in H:
                     result = False
         return result
+
+
+    @property
+    def center(self):
+        """
+        Center of the group. Devuelve un grupo
+        Example:
+        print S3.center
+        """
+        if self._center is not None:
+            return self._center
+
+        if self.is_abelian:
+            self._center = self
+            return self
+
+        center = []
+        for g in self.elements.values():  # Para iterar sobre los valores del diccionario, es decir, sobre elementos
+            esta_en_el_centro = True
+            for h in self.elements.values():  # Para iterar sobre los valores del diccionario, es decir, sobre elementos
+                if h * g != g * h:
+                    esta_en_el_centro = False
+            if esta_en_el_centro:
+                center.append(g)
+        result = de_lista_a_grupo(self, center)
+        self._center = result
+        return result
+
+
+def de_lista_a_grupo(grupo, elementos):
+    """
+    Receives a list of elements of a group and returns a group instance. The elements are Group Elements instances
+    :param elementos: elements that form the group
+    :param grupo: group at which elements belong
+    """
+    # We have to prepare the elements and table of the subgroup
+    # Preparation of elements
+    elements = {}
+    elementos_en_numero = []
+    for g in elementos:
+        elementos_en_numero.append(grupo.element_names[g.name])
+        elements[g.name] = grupo.element_names[g.name]
+    # Preparation of table
+    table = submatrix(elementos_en_numero, grupo.table)
+    name = grupo.name + '-center'
+    return Group(name, elements, table)
+
+
+
 
 
 class GroupElement(object):
@@ -685,9 +744,23 @@ def main():
 
     print '************************** Subgrupos Normales ************'
     print
-    candidato =  ['g5', 'g3', 'g1']
+    candidato = ['g5', 'g3', 'g1']
     print S3.is_normal(candidato)
     print S3
+
+    print '************************** Center of a Group ***************'
+    print
+    s3center = S3.center
+    print s3center
+    print s3center.is_abelian
+    print
+    q8center = Q8.center
+    print q8center
+    print q8center.elements
+
+
+
+
 
 
 
