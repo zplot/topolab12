@@ -811,7 +811,7 @@ def main():
     print 'p2 * p1 = ', perm_product(p2, p1)
     print
     print
-    vaya = symmetric_group(4)
+    vaya = symmetric_group(3)
     print 'subgroups = ', vaya.subgroups
 
 
