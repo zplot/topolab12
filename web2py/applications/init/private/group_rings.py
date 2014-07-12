@@ -411,20 +411,6 @@ class GroupRingElement(object):
         self.name = result
 
 
-    @property
-    def conj(self):
-        """
-        Calculation of the conjugate element
-        """
-
-        if self._conj is not None:
-            return self._conj
-
-
-        return self._conj
-
-
-
 
 
     def __add__(self, other):
@@ -557,6 +543,44 @@ class GroupRing(object):
 
     def __str__(self):
         return self.name
+
+
+def symmetric_group(n):
+    """
+    :param n: Entero
+    :return:  Symetric Group of n elements
+    """
+    elements_tmp = tuple(itertools.permutations(range(1, n + 1), n))
+    table = []
+    for i in elements_tmp:
+        fila = []
+        for j in elements_tmp:
+            fila.append(perm_product(i, j))
+        table.append(fila)
+
+    print 'elements_tmp = ', elements_tmp
+    print 'table = ', table
+    name = 'S' + str(n)
+    elements = {}
+    for p in elements_tmp:
+        p_name = 'P' + str(p)
+        elements[p_name] = p
+    print 'elements = ', elements
+    result = Group(name, elements, table)
+    return result
+
+
+
+def perm_product(p1, p2):
+    """
+    Permutations multiply
+    :param p1: tuple
+    :param p2: tuple
+    """
+    result_list = []
+    for i in range(len(p1)):
+        result_list.append(p1[p2[i] - 1])
+    return tuple(result_list)
 
 
 
@@ -757,6 +781,26 @@ def main():
     q8center = Q8.center
     print q8center
     print q8center.elements
+
+    print
+    c5center = C5.center
+    print c5center
+    print c5center.elements
+
+
+    print '************************** SymmetricGroup ************'
+    vaya = symmetric_group(3)
+    print vaya
+
+
+
+    p1 = (2, 1, 3, 4, 6, 5, 7)
+    p2 = (2, 3, 4, 1, 5, 6, 7)
+    print
+    print 'p1 = ', p1
+    print 'p2 = ', p2
+    print 'p1 * p2 = ', perm_product(p1, p2)
+    print 'p2 * p1 = ', perm_product(p2, p1)
 
 
 

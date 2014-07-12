@@ -1,1 +1,7 @@
 
+Asuntos pendientes:
+
+1. Cosets
+2. Grupos cocientes
+3. Suma directa de grupos
+4. Grupo derivado
