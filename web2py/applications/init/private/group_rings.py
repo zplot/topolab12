@@ -812,7 +812,7 @@ def main():
     print
     print
     vaya = symmetric_group(4)
-    print vaya
+    print 'subgroups = ', vaya.subgroups
 
 
 
