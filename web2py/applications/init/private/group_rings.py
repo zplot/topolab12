@@ -551,21 +551,34 @@ def symmetric_group(n):
     :return:  Symetric Group of n elements
     """
     elements_tmp = tuple(itertools.permutations(range(1, n + 1), n))
+
+
+    print 'elements_tmp = ', elements_tmp
+
+    name = 'S' + str(n)
+    elements = {}
+    j = 1
+    for p in elements_tmp:
+        p_name = 'P'
+        for i in p:
+            p_name = p_name + '_' + str(i)
+        elements[p_name] = j
+        j = j + 1
+    print 'elements = ', elements
     table = []
     for i in elements_tmp:
         fila = []
         for j in elements_tmp:
-            fila.append(perm_product(i, j))
-        table.append(fila)
+            producto = perm_product(i, j)
+            q_name = 'P'
+            for k in producto:
+                q_name = q_name + '_' + str(k)
 
-    print 'elements_tmp = ', elements_tmp
+            num_producto = elements[q_name]
+
+            fila.append(num_producto)
+        table.append(fila)
     print 'table = ', table
-    name = 'S' + str(n)
-    elements = {}
-    for p in elements_tmp:
-        p_name = 'P' + str(p)
-        elements[p_name] = p
-    print 'elements = ', elements
     result = Group(name, elements, table)
     return result
 
@@ -789,11 +802,6 @@ def main():
 
 
     print '************************** SymmetricGroup ************'
-    vaya = symmetric_group(3)
-    print vaya
-
-
-
     p1 = (2, 1, 3, 4, 6, 5, 7)
     p2 = (2, 3, 4, 1, 5, 6, 7)
     print
@@ -801,6 +809,14 @@ def main():
     print 'p2 = ', p2
     print 'p1 * p2 = ', perm_product(p1, p2)
     print 'p2 * p1 = ', perm_product(p2, p1)
+    print
+    print
+    vaya = symmetric_group(4)
+    print vaya
+
+
+
+
 
 
 
